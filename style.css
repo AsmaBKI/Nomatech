@@ -28,6 +28,7 @@ body {
   top: 0;
   border-top: 2px solid #a29d9d;
   box-shadow: 1px 3px 4px #a29d9d;
+  z-index: 2;
 }
 .bloc-container1 {
   height: 100%;
@@ -44,7 +45,7 @@ body {
   display: flex !important;
   justify-content: flex-end !important;
   margin-right: 20px;
-  gap: 10px;
+  gap: 10px !important;
   line-height: 60px;
 }
 .bloc-container2 a {
@@ -246,6 +247,7 @@ body {
 }
 .content {
   flex-grow: 1;
+  z-index: 1;
 }
 /*---------------------FOOTER---------------------*/
 .footer-dark {
@@ -337,6 +339,10 @@ body {
   font-size: 13px;
   margin-bottom: 0;
 }
+
+/*--------------------- PAGE D'ACCUEIL ---------------------*/
+
+
 
 /*---------------------CONSULTATION PROJET---------------------*/
 
