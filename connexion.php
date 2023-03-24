@@ -1,6 +1,8 @@
 
 <?php 
 session_start();
+
+
 $bdd = new PDO("mysql:host=localhost;dbname=nomatech;port=8889", "root", "root");
 
 if(isset($_POST['envoi'])){
