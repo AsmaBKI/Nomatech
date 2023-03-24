@@ -28,7 +28,7 @@ body {
   top: 0;
   border-top: 2px solid #a29d9d;
   box-shadow: 1px 3px 4px #a29d9d;
-  z-index: 10;
+  z-index: 2;
 }
 .bloc-container1 {
   height: 100%;
@@ -356,10 +356,4 @@ h1.text-logo{
 
 .img-thumbnail{
   border: 2px solid;
-}
-.bandeau.bg-primary {
-  z-index: 1;
-}
-.container.mt-5{
-  z-index: 1;
 }
