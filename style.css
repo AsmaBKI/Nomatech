@@ -357,3 +357,6 @@ h1.text-logo{
 .img-thumbnail{
   border: 2px solid;
 }
+a.btn.btn-primary{
+  color: #240085 !important;
+}
