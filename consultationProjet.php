@@ -33,13 +33,13 @@ require_once "./admin/databaseNomaTech.php";
       </div>
 
       <div class="bloc-container2">
-        <a href="#">Jobs</a>
+        <a href="./consultationProjet.php">Jobs</a>
 
-        <a href="#">Talents</a>
+        <a href="./index.php">Talents</a>
 
-        <a href="#">Se connecter</a>
+        <a href="./connexion.php">Se connecter</a>
 
-        <button class="inscription" onclick="window.location.href = './inscription.php';">
+        <button class="inscription" onclick="window.location.href = './inscrip2803.php';">
           S'inscrire
         </button>
       </div>
@@ -61,22 +61,22 @@ require_once "./admin/databaseNomaTech.php";
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Jobs</a>
+          <a href="./consultationProjet.php">Jobs</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Talents</a>
+          <a href="./index.php">Talents</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Se connecter</a>
+          <a href="./connexion.php">Se connecter</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="./inscription.php">S'inscrire gratuitement</a>
+          <a href="./inscrip2803.php">S'inscrire gratuitement</a>
         </span>
       </div>
       <div class="bloc-menu">
@@ -97,49 +97,55 @@ require_once "./admin/databaseNomaTech.php";
         </div>
       </div>
     </nav>
-    <div class="container site">
-      <h1 class="text-logo mt-5"> Liste des projets disponibles </h1>
 
-      <!-- ********************** BARRE DE RECHERCHE ************************* -->
+    <h1 class="text-logo mt-5" style="font-family: 'Oswald', serif;" > Liste des projets disponibles </h1>
 
-      <form class="text-center" action = "" method = "get">
-        <input type = "search" class="col-6 mt-5 mb-5 mr-5 img-thumbnail border-primary" name = "terme">
-        <input type = "submit" class="btn btn-primary" name = "s" value = "Rechercher">
-        </form>
-      
-      <!-- ********************** AFFICHAGE DE TOUS LES PROJETS ************************* -->
+    <div class="container">
+      <div class="col-12">
+        <div class="row g-3 mb-5 mt-4">
+            <!-- ********************** BARRE DE RECHERCHE ************************* -->
 
-    <?php
-      //$db = new PDO("mysql:host=localhost;dbname=nomatech","root","root");
-      $statement = $bdd -> query('SELECT projet.id_projet, projet.project, projet.description, projet.budget, projet.date, projet.dateinit, projet.reponse FROM projet');
+            <form class="col-10" action = "" method = "GET" align="center">
+              <input type = "search" class="img-thumbnail border-primary" name = "terme">
+              <input type = "submit" class="col-2 mt-1 btn btn-primary" name = "s" value = "Rechercher">
+            </form>
+            
+            <!-- ********************** AFFICHAGE DE TOUS LES PROJETS ************************* -->
 
-      echo '<div class="tab-content">';
-      echo '<div class="tab-pane active". id="1"></div>';
-      echo '<div class="row">';
+          <?php
+            //$db = new PDO("mysql:host=localhost;dbname=nomatech","root","root");
+            $statement = $bdd -> query('SELECT projet.id_projet, projet.project, projet.description, projet.budget, projet.date, projet.dateinit, projet.reponse FROM projet');
 
-      while ($item = $statement -> fetch())
-      {
-          echo '<div class="col-sm-6 col-md-10 mt-4">';
-              echo '<div class="img-thumbnail border-primary">';
+            echo '<div class="tab-content">';
+            echo '<div class="tab-pane active". id="1"></div>';
+            echo '<div class="row">';
 
-                  //echo '<img class="img-photo" src="'.$item['image'].'" alt="Pas de photo disponible">';
-                  echo '<h4> '. $item['project'].'</h4>';
-                  echo '<p> Description : <br>'. $item['description'] .'</p>';
-                  echo '<p> Budget journalier : '. $item['budget'] .'</p>';
-                  echo '<p> Date limite pour les candidatures : '. $item['date'] .'</p>';
-                  echo '<p> Réponse sous '. $item['reponse'] .' après la date limite des candidatures </p>';
-                  echo '<p> Date de début du projet : '. $item['dateinit'] .'</p>';
-                  
-                  echo '<a href ="#" class="btn btn-default btn-primary" role="button">Contacter</span> </a>';
-                      
-              echo '</div>';
-          echo '</div>';
-      }
+            while ($item = $statement -> fetch())
+            {
+                echo '<div class="col-sm-6 col-md-10 mt-4">';
+                    echo '<div class="img-thumbnail border-primary">';
 
-      echo '</div>';
-      echo '</div> ';
-    ?> 
-  </div>
+                        //echo '<img class="img-photo" src="'.$item['image'].'" alt="Pas de photo disponible">';
+                        echo '<h4> '. $item['project'].'</h4>';
+                        echo '<p> Description : <br>'. $item['description'] .'</p>';
+                        echo '<p> Budget journalier : '. $item['budget'] .'</p>';
+                        echo '<p> Date limite pour les candidatures : '. $item['date'] .'</p>';
+                        echo '<p> Réponse sous '. $item['reponse'] .' après la date limite des candidatures </p>';
+                        echo '<p> Date de début du projet : '. $item['dateinit'] .'</p>';
+                        
+                        echo '<a href ="#" class="btn btn-default btn-primary" role="button">Contacter</span> </a>';
+                            
+                    echo '</div>';
+                echo '</div>';
+            }
+
+            echo '</div>';
+            echo '</div> ';
+          ?> 
+        </div>
+      </div>
+    </div>
+
     <!------------------ FOOTER ------------------>
     <div class="footer-dark mt-5">
       <footer>

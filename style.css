@@ -10,7 +10,7 @@ body {
   height: 100%;
 }
 body {
-  background-color: #f1f1f1 !important;
+  
   display: flex;
   flex-direction: column;
   padding-top: 65px;
@@ -613,6 +613,7 @@ h1.text-logo {
 
 .img-thumbnail {
   border: 2px solid;
+  color: #240085;
 }
 
 .body-part1 {

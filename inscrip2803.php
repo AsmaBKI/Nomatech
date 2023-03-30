@@ -68,7 +68,7 @@ if(isset($_POST['envoi'])){
     <header class="nav-central">
       <div class="Bloc-container1">
         <div class="logo-nav">
-          <span style="font-family: 'Alkatra', serif;serif; font-size: 40px; color: #240085" >Noma'tech</span>
+          <span><a href="./testaccueil.php" style="font-family: 'Alkatra', serif; font-size: 40px; color: #240085; text-decoration:none">Noma'tech</a></span>
         </div>
       </div>
 
@@ -116,7 +116,7 @@ if(isset($_POST['envoi'])){
       </div>
       <div class="bloc-menu" >
         <span class="nav-menu-item">
-          <a href="./inscription.php">S'inscrire gratuitement</a>
+          <a href="./inscrip2803.php">S'inscrire gratuitement</a>
         </span>
       </div>
       <div class="bloc-menu">
@@ -149,25 +149,25 @@ if(isset($_POST['envoi'])){
         <form method="POST" action=" "align="" >
                 
           <div class="col-md-12 mt-4" >
-              <label  for="pseudo" style="font-family: 'Alkatra', serif;">Votre nom</label>
+              <label  for="pseudo" style="font-family: 'Oswald', serif;">Votre nom</label>
               <input type="text" class="form-control" name="pseudo"  placeholder="Martin" required>
               <br/>
           </div>
 
           <div class="col-md-12 mt-4">
-              <label  for="email" style="font-family: 'Alkatra', serif;">Votre e-mail</label>
+              <label  for="email" style="font-family: 'Oswald', serif;">Votre e-mail</label>
               <input type="email" id="email" class="form-control" name="email" placeholder="monadresse@mail.com" required>
               <br/>
           </div>
           
           <div class="col-md-12 mt-4">
-              <label  for="mdo" style="font-family: 'Alkatra', serif;">Votre mot de passe </label>
+              <label  for="mdo" style="font-family: 'Oswald', serif;">Votre mot de passe </label>
               <input type="password" class="form-control" name ="mdp" required>
               <br/>
           </div>
 
           <div div class="form-button mt-3 ml-3">
-              <button  style="font-family: 'Alkatra', serif;" type="submit" name ="envoi" onclick="window.location.href = './inscriptionJulien.php';" class="btn btn-primary" > S'inscrire </button>
+              <button  style="font-family: 'Oswald', serif;" type="submit" name ="envoi" onclick="window.location.href = './inscriptionJulien.php';" class="btn btn-primary" > S'inscrire </button>
           </div>
                         
         </form>

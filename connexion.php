@@ -142,19 +142,19 @@ if(isset($_POST['envoi'])){
                     <div class="form col-7 mt-5">
                         <form method="POST" action=" " align="center" >
                             <div>
-                                <label class="form-label" for="email">Votre e-mail</label>
-                                <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+                                <label class="form-label" for="email" style="font-family: 'Oswald', serif;">Votre e-mail</label>
+                                <input type="email" id="email" class="form-control" name="email" placeholder="monadresse@mail.com" required>
                                 <br/>
                             </div>
 
                             <div>
-                                <label class="form-label" for="mdo">Votre mot de passe </label>
-                                <input type="password" name ="mdp" required>
+                                <label class="form-label" for="mdo" style="font-family: 'Oswald', serif;">Votre mot de passe </label>
+                                <input type="password" class="form-control" name ="mdp" required>
                                 <br/>
                             </div>
 
                             <div>
-                                <button type="submit" name ="envoi" class="btn btn-primary" > Se connecter </button>
+                                <button type="submit" name ="envoi" class="btn btn-primary" style="font-family: 'Oswald', serif;"> Se connecter </button>
                             </div>
                         </form>
                     </div>
