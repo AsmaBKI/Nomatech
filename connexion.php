@@ -92,22 +92,22 @@ if(isset($_POST['envoi'])){
     <nav class="nav-gauche">
       <div class="bloc-menu">
         <div class="logo">
-          <span class="ml-2" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085"><a href="./testaccueil.php">Noma'tech</a></span>
+          <span class="ml-2"><a href="./testaccueil.php" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</a></span>
         </div>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Jobs</a>
+          <a href="./consultationProjet.php">Jobs</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Talents</a>
+          <a href="./index.php">Talents</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Se connecter</a>
+          <a href="./connexion.php">Se connecter</a>
         </span>
       </div>
       <div class="bloc-menu">
@@ -159,7 +159,7 @@ if(isset($_POST['envoi'])){
                         </form>
                     </div>
                     <div class="col-5 text-center">
-                        <img src="./img/connexion.png" class="w-75 rounded img-fluid"> 
+                        <img src="./img/connexion.png" class="w-75 rounded"> 
                     </div >
                 </div>
             </div>

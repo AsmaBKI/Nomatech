@@ -40,8 +40,27 @@ if(isset($_POST['envoi'])){
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
     crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500;700&family=Open+Sans:wght@300;500&family=Oswald:wght@200&display=swap" rel="stylesheet">
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <title>Espace d'inscription </title>
 </head>
 <body>
@@ -54,13 +73,13 @@ if(isset($_POST['envoi'])){
       </div>
 
       <div class="bloc-container2">
-        <a href="#">Jobs</a>
+        <a href="./consultationProjet.php">Jobs</a>
 
-        <a href="#">Talents</a>
+        <a href="./index.php">Talents</a>
 
-        <a href="#">Se connecter</a>
+        <a href="./connexion.php">Se connecter</a>
 
-        <button class="inscription" onclick="window.location.href = '#';">
+        <button class="inscription" onclick="window.location.href = './inscrip2803.php';">
           S'inscrire
         </button>
       </div>
@@ -77,27 +96,27 @@ if(isset($_POST['envoi'])){
     <nav class="nav-gauche">
       <div class="bloc-menu">
         <div class="logo">
-          <img src="./img/nomatech_gauche.png" alt="Logo de Noma'Tech" />
+          <span class="ml-2"><a href="./testaccueil.php" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</a></span>
         </div>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Jobs</a>
+          <a href="./consultationProjet.php">Jobs</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Talents</a>
+          <a href="./index.php">Talents</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Se connecter</a>
+          <a href="./connexion.php">Se connecter</a>
         </span>
       </div>
       <div class="bloc-menu" >
         <span class="nav-menu-item">
-          <a href="#">S'inscrire gratuitement</a>
+          <a href="./inscription.php">S'inscrire gratuitement</a>
         </span>
       </div>
       <div class="bloc-menu">
@@ -121,51 +140,42 @@ if(isset($_POST['envoi'])){
     <!------------------ Login Form------------------>
 
 <div class="container">
-<div class="row g-3 mt-3 mb-5">
-<div class="paragrapheimg col-4">
-    <img class="" style="width:100%"  src="./img/inscription.png">
-</div>
-<div class="form-body mt-5">
-    <div class="row">
-        <div class="form-holder"> 
-            <div class="form-content">
-                <div class="form-items">  
-                   
-                     <form method="POST" action=" "align="" >
+  <div class="col-12">
+    <div class="row g-3 mt-3 mb-5">
+      <div class="col-5 text-center">
+        <img src="./img/inscription.png" class="w-75 rounded">
+      </div>
+      <div class="form col-7 mt-5">
+        <form method="POST" action=" "align="" >
                 
-                        <div class="col-md-12 mt-4" >
-                            <label  for="pseudo" style="font-family: 'Alkatra', serif;">Votre nom</label>
-                            <input type="text" class="form-control" name="pseudo"  placeholder="Martin" required>
-                            <br/>
-                        </div>
+          <div class="col-md-12 mt-4" >
+              <label  for="pseudo" style="font-family: 'Alkatra', serif;">Votre nom</label>
+              <input type="text" class="form-control" name="pseudo"  placeholder="Martin" required>
+              <br/>
+          </div>
 
-                        <div class="col-md-12 mt-4">
-                            <label  for="email" style="font-family: 'Alkatra', serif;">Votre e-mail</label>
-                            <input type="email" id="email" class="form-control" name="email" placeholder="monadresse@mail.com" required>
-                            <br/>
-                        </div>
+          <div class="col-md-12 mt-4">
+              <label  for="email" style="font-family: 'Alkatra', serif;">Votre e-mail</label>
+              <input type="email" id="email" class="form-control" name="email" placeholder="monadresse@mail.com" required>
+              <br/>
+          </div>
+          
+          <div class="col-md-12 mt-4">
+              <label  for="mdo" style="font-family: 'Alkatra', serif;">Votre mot de passe </label>
+              <input type="password" class="form-control" name ="mdp" required>
+              <br/>
+          </div>
+
+          <div div class="form-button mt-3 ml-3">
+              <button  style="font-family: 'Alkatra', serif;" type="submit" name ="envoi" onclick="window.location.href = './inscriptionJulien.php';" class="btn btn-primary" > S'inscrire </button>
+          </div>
                         
-
-                        <div class="col-md-12 mt-4">
-                            <label  for="mdo" style="font-family: 'Alkatra', serif;">Votre mot de passe </label>
-                            <input type="password" class="form-control" name ="mdp" required>
-                            <br/>
-                        </div>
-
-
-                        <div div class="form-button mt-3 ml-3">
-                            <button  style="font-family: 'Alkatra', serif;" type="submit" name ="envoi" onclick="window.location.href = './inscriptionJulien.php';" class="btn btn-primary" > S'inscrire </button>
-                        </div>
-                        
-                    </form>
-                 </div>
-         </div>
+        </form>
+      </div>
     </div>
-</div>
-</div>
+  </div>
 </div>
 
-</div>
     <!------------------ FOOTER ------------------>
 <div class="footer-dark mt-5"> 
       <footer>
