@@ -39,7 +39,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
     <header class="nav-central">
       <div class="Bloc-container1">
         <div class="logo-nav">
-          <span style="font-family: 'Alkatra', serif; font-size: 40px; color: #240085">Noma'tech</span>
+          <span><a href="./testaccueil.php" style="font-family: 'Alkatra', serif; font-size: 40px; color: #240085; text-decoration:none">Noma'tech</a></span>
         </div>
       </div>
 
@@ -67,7 +67,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
     <nav class="nav-gauche">
       <div class="bloc-menu">
         <div class="logo">
-          <span class="ml-2" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</span>
+          <span class="ml-2" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085"><a href="./testaccueil.php">Noma'tech</a></span>
         </div>
       </div>
       <div class="bloc-menu">

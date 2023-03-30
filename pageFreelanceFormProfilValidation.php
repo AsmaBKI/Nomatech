@@ -43,9 +43,28 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Lien vers la page CSS -->
-  <link rel="stylesheet" href="pageFreelanceFormProfil.css"> 
-  <!-- Lien CDN pour utiliser Bootstrap 5.0.2 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500;700&family=Open+Sans:wght@300;500&family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
   <title>Ajouter le profil pageFreelanceFormProfil</title>
 </head>
       <body>
@@ -82,7 +101,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
     <nav class="nav-gauche">
       <div class="bloc-menu">
         <div class="logo">
-          <span class="ml-2" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</span>
+          <span class="ml-2" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085"> <a href="./testaccueil.php">Noma'tech</a></span>
         </div>
       </div>
       <div class="bloc-menu">
@@ -161,5 +180,46 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
               <a href="pageFreelanceFormProfil.php" class="btn btn-light mt-5"> Revenir à la page précédente </a>
               <a href="index.php" class="btn btn-light mt-5"> Liste des job </a>
           </div>
+              <!------------------ FOOTER ------------------>
+    <div class="footer-dark mt-5">
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 col-md-3 item">
+              <h3>Services</h3>
+              <ul>
+                <li><a href="#">Web design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Hosting</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 item">
+              <h3>About</h3>
+              <ul>
+                <li><a href="#">Company</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6 item text">
+              <h3>Noma'Tech</h3>
+              <p>
+                Praesent sed lobortis mi. Suspendisse vel placerat ligula.
+                Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis
+                tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel
+                in justo.
+              </p>
+            </div>
+            <div class="col item social">
+              <a href="#"><i class="icon ion-social-facebook"></i></a>
+              <a href="#"><i class="icon ion-social-twitter"></i></a>
+              <a href="#"><i class="icon ion-social-snapchat"></i></a>
+              <a href="#"><i class="icon ion-social-instagram"></i></a>
+            </div>
+          </div>
+          <p class="copyright">Noma'Tech © 2023</p>
+        </div>
+      </footer>
+    </div>
       </body>
 </html>

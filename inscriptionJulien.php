@@ -38,13 +38,13 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
       </div>
 
       <div class="bloc-container2">
-        <a href="#">Jobs</a>
+        <a href="./consultationProjet.php">Jobs</a>
 
-        <a href="#">Talents</a>
+        <a href="./index.php">Talents</a>
 
         <a href="#">Se connecter</a>
 
-        <button class="inscription" onclick="window.location.href = './inscription.php';">
+        <button class="inscription" onclick="window.location.href = './inscrip2803.php';">
           S'inscrire
         </button>
       </div>
@@ -66,12 +66,12 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Jobs</a>
+          <a href="./consutationProjet.php">Jobs</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Talents</a>
+          <a href="./index.php">Talents</a>
         </span>
       </div>
       <div class="bloc-menu">
@@ -81,7 +81,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="'./inscription.php'">S'inscrire gratuitement</a>
+          <a href="'./inscrip2803.php'">S'inscrire gratuitement</a>
         </span>
       </div>
       <div class="bloc-menu">
