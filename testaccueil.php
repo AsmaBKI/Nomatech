@@ -48,7 +48,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 
         <a href="./index.php">Talents</a>
 
-        <a href="#">Se connecter</a>
+        <a href="./connexion.php">Se connecter</a>
 
         <button class="inscription" onclick="window.location.href = './inscrip2803.php';">
           S'inscrire
@@ -154,7 +154,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                       VOUS ETES <br>UN DIGITAL NOMAD ?  </h1>
                 </div>
                 <img src="./img/img-freelance.png"> 
-            </div >
+                </div >
           </div>
         </div>
 
@@ -210,6 +210,13 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                 </div>
               </div>
               
+              <div> 
+                <h1 class="mt-5 text-center" style="font-family: 'Oswald', serif;">Fini le métro, boulot dodo, tu peux travailler depuis ...</h1>
+                <div class="text-center">
+                  <img src="./img/freelance.png" class="card-img-top w-75 rounded" alt="BONJUOUR" />
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
@@ -265,12 +272,12 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
         
         
     </div>
-    <div> 
-      <h1 style="font-family: 'Oswald', serif;">Fini le métro, boulot dodo, tu peux travailler depuis ...</h1>
-      <div>
-        <img src="./img/imgDestination.png" class="card-img-top w-100" alt="BONJUOUR" />
+      <div> 
+        <h1  class="mt-5 text-center" style="font-family: 'Oswald', serif;">Au revoir la paprasse, bonjour la tranquillité grâce à...</h1>
+        <div class="text-center">
+          <img src="./img/entreprise.png" class="card-img-top w-75 rounded" alt="BONJUOUR" />
+        </div>
       </div>
-    </div>
     </div>
     <!------------------ FOOTER ------------------>
     <div class="footer-dark mt-5">

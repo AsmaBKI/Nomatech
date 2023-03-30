@@ -82,6 +82,7 @@ body {
   background-color: white;
   font-weight: bolder;
   border-color: #f3e4f3;
+  color : #240085;
 }
 .inscription:hover {
   transition: all 0.2 ease-out;
