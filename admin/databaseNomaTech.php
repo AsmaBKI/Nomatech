@@ -11,5 +11,5 @@ $userName = 'nomatech';
 $userPassword = 'uoidI&Tn1gXGJ2Dr1MBUkR5GJJewLY';
 
 //connection à la base de donnée
-$db = new PDO(DB_DSN,$userName,$userPassword);
+$bdd = new PDO(DB_DSN,$userName,$userPassword);
 ?>

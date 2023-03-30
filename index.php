@@ -15,7 +15,7 @@ $bdd = new PDO("mysql:host=localhost;dbname=nomatech;port=8889", "root", "root")
     <!--Lien de Bootstrap--> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!--Lien vers notre page CSS--> 
-    <link rel="stylesheet" href="./style.css">    
+    <link rel="stylesheet" href="./css/stylePatisserie.css">    
 
     <title>Document</title>
 </head>
