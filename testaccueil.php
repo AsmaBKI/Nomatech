@@ -44,11 +44,11 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
       <div class="bloc-container2">
         <a href="./consultationProjet.php">Jobs</a>
 
-        <a href="#">Talents</a>
+        <a href="./index.php">Talents</a>
 
         <a href="#">Se connecter</a>
 
-        <button class="inscription" onclick="window.location.href = './inscriptiontest.php';">
+        <button class="inscription" onclick="window.location.href = './inscrip2803.php';">
           S'inscrire
         </button>
       </div>
@@ -65,7 +65,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
     <nav class="nav-gauche">
       <div class="bloc-menu">
         <div class="logo">
-          <img src="./img/nomatech_gauche.png" alt="Logo de Noma'Tech" />
+          <span class="ml-2" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</span>
         </div>
       </div>
       <div class="bloc-menu">
@@ -140,7 +140,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
             <div class="row col-5">
                 <div>
                     <h1 class="text-center " style="font-family: 'Oswald', serif;">
-                    VOUS ETES UNE ENTREPRISE ?  </h1>
+                    VOUS ETES <br>UNE ENTREPRISE ?  </h1>
                 </div>
                 <img src="./img/img-entreprise.png"> 
             </div >
@@ -149,7 +149,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
             <div class="row col-5">
                 <div>
                     <h1 class="text-center " style="font-family: 'Oswald', serif;">
-                      VOUS ETES UN DIGITAL NOMAD ?  </h1>
+                      VOUS ETES <br>UN DIGITAL NOMAD ?  </h1>
                 </div>
                 <img src="./img/img-freelance.png"> 
             </div >
@@ -164,7 +164,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 
               <h2 class="text-center mt-5 mb-5" style="font-family: 'Oswald', serif;"> Ils cherchent des talents : trouvez l'entreprise parfaite pour propulser votre carrière </h2>
               <div class="col-12 col-md-6 col-lg-3">
-                <div class="card img-thumbnail ">
+                <div class="card img-thumbnail">
                   <img src="./img/entrepriseprovisoire.jpg" class="card-img-top w-100" alt="..."/>
                   <div class="card-body p-0 mt-3">
                     <h5 class="card-title text-center">Nom de l'entreprise</h5>
@@ -210,16 +210,19 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
               
             </div>
           </div>
-          </div>
+        </div>
+
+        <div class="container mt-4">
           <h2 class="text-center mt-5 mb-5" style="font-family: 'Oswald', serif;" >Ils cherchent des entreprises : trouvez le talent parfait pour propulser vos projets</h2>
+          
           <div class="row g-3 mt-3 mb-5">
 
             <div class="col-12 col-md-6 col-lg-3">
-              <div class="card">
+              <div class="card img-thumbnail">
                 <img src="./img/freelanceprovisoire.jpg" class="card-img-top w-100" alt="..."/>
                 <div class="card-body p-0 mt-1">
                     <h5 class="card-title text-center">Pour les freelances</h5>
-                    <p class="card-text mt-3">Spécialité<br>Localisation<br>Projet réalisé</p>
+                    <p class="card-text mt-3">Spécialité<!--<br>Localisation<br>Projet réalisé--></p>
                     <a href="#" class="btn btn-primary btn-block">Consulter</a>
                   </div>
               </div>
@@ -230,7 +233,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                 <img src="./img/freelanceprovisoire.jpg" class="card-img-top w-100" alt="...">
                   <div class="card-body p-0 mt-1">
                       <h5 class="card-title text-center">Pour les entreprises</h5>
-                      <p class="card-text mt-3">Spécialité<br>Localisation<br>Projet réalisé</p>
+                      <p class="card-text mt-3">Spécialité<!--<br>Localisation<br>Projet réalisé--></p>
                       <a href="#" class="btn btn-primary btn-block">Consulter</a>
                   </div>
               </div>
@@ -241,7 +244,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                 <img src="./img/freelanceprovisoire.jpg" class="card-img-top w-100" alt="...">
                 <div class="card-body p-0 mt-1">
                   <h5 class="card-title text-center">Pour les freelances</h5>
-                  <p class="card-text mt-3">Spécialité<br>Localisation<br>Projet réalisé</p>
+                  <p class="card-text mt-3">Spécialité<!--<br>Localisation<br>Projet réalisé--></p>
                   <a href="#" class="btn btn-primary btn-block">Consulter</a>
                 </div>
               </div>
@@ -252,20 +255,20 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                 <img src="./img/freelanceprovisoire.jpg" class="card-img-top w-100" alt="...">
                 <div class="card-body p-0 mt-1">
                     <h5 class="card-title text-center">Pour les freelances</h5>
-                    <p class="card-text mt-3">Spécialité<br>Localisation<br>Projet réalisé</p>
+                    <p class="card-text mt-3">Spécialité<!--<br>Localisation<br>Projet réalisé--></p>
                     <a href="#" class="btn btn-primary btn-block">Consulter</a>
                 </div>
               </div>
             </div>
-
+        
         
     </div>
     <div> 
-      <h1>Fini le métro, boulot dodo, tu peux travailler depuis ...</h1>
+      <h1 style="font-family: 'Oswald', serif;">Fini le métro, boulot dodo, tu peux travailler depuis ...</h1>
       <div>
-        <img src="./img/imgDestination.png" class="card-img-top w-100" alt="BONJUOUR />
-        <!-- img/img-destination.png -->
+        <img src="./img/imgDestination.png" class="card-img-top w-100" alt="BONJUOUR" />
       </div>
+    </div>
     </div>
     <!------------------ FOOTER ------------------>
     <div class="footer-dark mt-5">

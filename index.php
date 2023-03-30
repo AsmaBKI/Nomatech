@@ -1,5 +1,6 @@
-<?php
-$bdd = new PDO("mysql:host=localhost;dbname=nomatech;port=8889", "root", "root");
+<?php //page pour que le freelance crée son profil
+require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
+// au lieu d'écrire la phrase  : $db = new PDO("mysql:host=localhost;dbname=nomatech","root","root");
 ?>
 
 <html lang="en">

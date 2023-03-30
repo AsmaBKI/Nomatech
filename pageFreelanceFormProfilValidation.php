@@ -12,25 +12,25 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
   $description = $_POST['description'];
 
   //on récupère d'abord le nom de l'image
-$img_nom=$_FILES['image']['name'];
+//$img_nom=$_FILES['image']['name'];
 
 //définir un nom temporaire
-$tmp_nom=$_FILES['image']['tmp_nom'];
+//$tmp_nom=$_FILES['image']['tmp_nom'];
 
 //récupère l'heure actuelle
-$time = time();
+//$time = time();
 
 //on renomme l'image 
-$nouveau_nom_image = $time.$img_nom;
+//$nouveau_nom_image = $time.$img_nom;
 
 //on délaplace l'image dans un dossier appellé 'image_bdd'
-$deplacer_img=move_uploaded_file($tmp_nom, "images_bdd/".$nouveau_nom_image);
+//$deplacer_img=move_uploaded_file($tmp_nom, "images_bdd/".$nouveau_nom_image);
 
 //insére le nom de l'image dans la base de données
 //$statement = $bdd -> query("INSERT INTO freelance(freelance.freelance_photo) VALUES ('$nouveau_nom_image');");
  
  //on insére les informations données par l'utilisateur + une image déjà définie
- $statement = $bdd -> query("INSERT INTO freelance(freelance.freelance_name, freelance.freelance_photo, freelance.freelance_job, freelance.freelance_country, freelance.freelance_tjm, freelance.freelance_experience, freelance.freelance_description) VALUES ('$name','$nouveau_nom_image','$job','$country','$tjm','$experience','$description');");
+ $statement = $bdd -> query("INSERT INTO freelance(freelance.freelance_name, freelance.freelance_job, freelance.freelance_country, freelance.freelance_tjm, freelance.freelance_experience, freelance.freelance_description) VALUES ('$name','$job','$country','$tjm','$experience','$description');");
 
 ?>
 

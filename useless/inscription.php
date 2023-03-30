@@ -3,7 +3,7 @@
 session_start();
 //creation objet PDO, le lien entre la bdd et php
 
-$bdd = new PDO("mysql:host=localhost;dbname=nomatech;port=8889", "root", "root");
+require_once "./admin/databaseNomaTech.php";
 
 if(isset($_POST['envoi'])){
 
