@@ -1,4 +1,6 @@
 <?php
+//se connection a une session utilisateur
+session_start();
 require_once "./admin/databaseNomaTech.php";
 ?>
 

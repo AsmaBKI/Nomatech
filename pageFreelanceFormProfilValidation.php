@@ -1,5 +1,7 @@
 <!-- page pour ajouter le profil freelance à la BDD -->
 <?php 
+//se connection a une session utilisateur
+session_start();
 require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 // au lieu d'écrire la phrase  : $bdd = new PDO("mysql:host=localhost;dbname=nomatech","root","root");
 
@@ -47,6 +49,81 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
   <title>Ajouter le profil pageFreelanceFormProfil</title>
 </head>
       <body>
+
+        <!------------------Navigation Central------------------>
+    <header class="nav-central">
+      <div class="Bloc-container1">
+        <div class="logo-nav">
+          <span style="font-family: 'Alkatra', serif; font-size: 40px; color: #240085">Noma'tech</span>
+        </div>
+      </div>
+
+      <div class="bloc-container2">
+        <a href="./consultationProjet.php">Jobs</a>
+
+        <a href="./index.php">Talents</a>
+
+        <a href="#">Se connecter</a>
+
+        <button class="inscription" onclick="window.location.href = './inscrip2803.php';">
+          S'inscrire
+        </button>
+      </div>
+    </header>
+    <!------------------ Menu Burger--------------------->
+    <div class="bouton-rond">
+      <div class="cont-ligne">
+        <div class="ligne"></div>
+      </div>
+    </div>
+
+    <!------------------Navigation Gauche------------------>
+
+    <nav class="nav-gauche">
+      <div class="bloc-menu">
+        <div class="logo">
+          <span class="ml-2" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</span>
+        </div>
+      </div>
+      <div class="bloc-menu">
+        <span class="nav-menu-item">
+          <a href="#">Jobs</a>
+        </span>
+      </div>
+      <div class="bloc-menu">
+        <span class="nav-menu-item">
+          <a href="#">Talents</a>
+        </span>
+      </div>
+      <div class="bloc-menu">
+        <span class="nav-menu-item">
+          <a href="#">Se connecter</a>
+        </span>
+      </div>
+      <div class="bloc-menu">
+        <span class="nav-menu-item">
+          <a href="./inscription.php">S'inscrire gratuitement</a>
+        </span>
+      </div>
+      <div class="bloc-menu">
+        <span class="nav-menu-item">
+          <a href="#">A propos de</a>
+        </span>
+      </div>
+      <div class="bloc-menu">
+        <span class="nav-menu-item">
+          <a href="#">Contact</a>
+        </span>
+      </div>
+      <div class="bloc-menu">
+        <div class="logo-contact">
+          <a href="#"
+            ><img src="./img/Mail contact.png" alt="Logo Contact"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
           <div class="container mt-5 ">
               <p> <?php   echo 'Votre profil : a bien été ajouté au site. Merci! 
               Récapitulatif : 
