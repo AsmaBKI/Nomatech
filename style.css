@@ -85,7 +85,12 @@ body {
 }
 .inscription:hover {
   transition: all 0.2 ease-out;
-  size;
+  /* L'image est grossie de 25% */
+  -webkit-transform:scale(1.05); /* Safari et Chrome */
+  -moz-transform:scale(1.05); /* Firefox */
+  -ms-transform:scale(1.05); /* Internet Explorer 9 */
+  -o-transform:scale(1.05); /* Opera */
+  transform:scale(1.05);
 }
 
 @media screen and (max-width: 1200px) {
