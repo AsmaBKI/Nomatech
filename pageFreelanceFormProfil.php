@@ -1,4 +1,5 @@
 <?php //page pour que le freelance crée son profil
+session_start();
 require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 // au lieu d'écrire la phrase  : $bdd = new PDO("mysql:host=localhost;dbname=nomatech","root","root");
 ?>
@@ -26,7 +27,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
   <header class="nav-central">
       <div class="Bloc-container1">
         <div class="logo-nav">
-          <span style="font-family: 'Alkatra', serif; font-size: 40px; color: #240085">Noma'tech</span>
+          <span><a href="./testaccueil.php" style="font-family: 'Alkatra', serif; font-size: 40px; color: #240085; text-decoration:none">Noma'tech</a></span>
         </div>
       </div>
 
@@ -54,7 +55,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
     <nav class="nav-gauche">
       <div class="bloc-menu-1">
         <div class="logo">
-          <span class="ml-2" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</span>
+          <span class="ml-2"><a href="./testaccueil.php" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</a></span>
         </div>
       </div>
       <div class="bloc-menu">
@@ -97,12 +98,11 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
     </nav>
 
     <div class="container">
-
-        <div class="form-body mt-5"> <!--Bootstrap : mt-5 sert à définir la marge supérieur -->
-          <div class="row">
-              <div class="form-holder">
-                  <div class="form-content">
-                      <div class="form-items">
+      <div class="form-body mt-5"> <!--Bootstrap : mt-5 sert à définir la marge supérieur -->
+        <div class="row">
+          <div class="form-holder">
+            <div class="form-content">
+              <div class="form-items">
                           <h3 style="font-family: 'Oswald', serif;">Créer votre profil Freelance</h3>
                           <p style="font-family: 'Oswald', serif;">Avant de trouver la mission de vos rêves, merci de compléter votre profil</p>
                           <!-- formulaire en méthode GET : on récupère le résultat sur la page pageFreelanceFormProfilValidation.php-->
@@ -126,7 +126,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                                 <input type="text" class="form-control" name="tjm" id="exampleFormControlInput1" placeholder="En euros, dollars? " required>
                               </div>
 
-                            <div class="col-md-12 mt-4">
+                              <div class="col-md-12 mt-4">
                                 <label class="mb-3 mr-1" for="level1">Quel est votre niveau d'expérience ? </label>
 
                                 <input type="radio" class="btn-check" name="level" value="0 à 2 ans" id="junior" required>
@@ -152,15 +152,16 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                                   <button id="submit" type="submit" class="btn btn-primary" style="font-family: 'Oswald', serif;">Publier mon profil</button>
                               </div>
                           </form>
-                      </div>
-                  </div>
               </div>
+            </div>
           </div>
+        </div>
       </div>
     </div>
+
      <!------------------ FOOTER ------------------>
-     <div class="footer-dark mt-5">
-     <footer>
+    <div class="footer-dark mt-5">
+      <footer>
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-3 item">
@@ -195,4 +196,5 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
       </footer>
     </div>
   </body>
+  <script src="./app.js"></script>
 </html>

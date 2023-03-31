@@ -1,5 +1,6 @@
 <!-- page pour ajouter le profil freelance à la BDD -->
 <?php 
+session_start();
 require_once "./admin/databaseNomaTech.php";// connection à la base de donnée
 // au lieu d'écrire la phrase  : $bdd = new PDO("mysql:host=localhost;dbname=nomatech","root","root");
 
