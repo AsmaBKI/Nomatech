@@ -113,6 +113,10 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
             <a href="./admin/insert.php" class="btn btn-light"> Ajouter un produit </a>  -->
             <h1 class="text-logo mb-5" style="font-family: 'Oswald', serif;"> Liste des freelances disponibles </h1>
             
+            <div class="text-center mb-5">
+                <img src="./img/background.jpg" class="card-img-top w-25 rounded" alt="Dessin de trajet" />
+            </div>
+
             <?php
         
             $statement = $bdd -> query('SELECT freelance.id_freelance, freelance.freelance_name, freelance.freelance_job, freelance.freelance_country, freelance.freelance_tjm, freelance.freelance_experience, freelance.freelance_description FROM freelance');

@@ -125,7 +125,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
               Vous allez adorer cette nouvelle façon de collaborer !</h2> -->
               <br>
               <h2 class="text-center" style="font-family: 'Oswald', serif;">
-                Changez de destination pas de boulot ! ✈️
+                Changez de destination, pas de boulot ! ✈️
               </h2>
             </div>
             <div class="paragrapheimg col-4 mt-5 mb-5 ">
@@ -158,31 +158,43 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
           </div>
         </div>
 
-
+        <!-- Partie Entreprise -->
         <div class="body-part-3">
           <div class="container mt-4">
             <div class="row g-3 mt-3 mb-5" style="">
               
 
               <h2 class="text-center mt-5 mb-5" style="font-family: 'Oswald', serif;"> Ils cherchent des talents : trouvez l'entreprise parfaite pour propulser votre carrière </h2>
-              <div class="col-12 col-md-6 col-lg-3">
-                <div class="card img-thumbnail">
-                  <img src="./img/entrepriseprovisoire.jpg" class="card-img-top w-100" alt="..."/>
-                  <div class="card-body p-0 mt-3">
-                    <h5 class="card-title text-center">Nom de l'entreprise</h5>
-                        <!-- <p class="card-text mt-3">Secteur d'activité<br>Localisation<br>Projet disponible</p> -->
-                      <a href="#" class="btn btn-primary btn-block">Consulter</a>
-                  </div>
-                </div>
-              </div>
-            
+              
+              <!-- PHP pour afficher 4 entreprises clientes-->
+              <?php
 
-              <div class="col-12 col-md-6 col-lg-3 " >
+              $statement = $bdd -> query('SELECT id_entreprise, name, image  FROM entreprise ORDER BY id_entreprise DESC LIMIT 4');
+
+              
+              // SELECT name,image FROM entreprise'); 
+              // freelance.id_freelance, freelance.freelance_name, freelance.freelance_job, freelance.freelance_country, freelance.freelance_tjm, freelance.freelance_experience, freelance.freelance_description FROM freelance');
+
+              while ($item = $statement -> fetch())
+            { 
+              echo '<div class="col-12 col-md-6 col-lg-3">';
+                echo '<div class="card img-thumbnail">';
+                  echo '<img src="'.$item['image'].'" class="card-img-top w-100" style="height: 120px;" alt="..."/>';
+                  echo '<div class="card-body p-0 mt-3">';
+                    echo '<h5 class="card-title text-center">'.$item['name'].'  <br> ➜ </h5>';
+                        // <!-- <p class="card-text mt-3">Secteur d'activité<br>Localisation<br>Projet disponible</p> -->
+                      // echo '<a href="#" class="btn btn-primary btn-block">Consulter</a>';
+                  echo'</div>';
+                echo'</div>';
+              echo '</div>';
+            }
+            ?>
+              <!-- <div class="col-12 col-md-6 col-lg-3 " >
                 <div class="card img-thumbnail ">
                     <img src="./img/entrepriseprovisoire.jpg" class="card-img-top w-100" alt="..."/>
                     <div class="card-body p-0 mt-3">
                         <h5 class="card-title text-center">Nom de l'entreprise</h5>
-                        <!-- <p class="card-text mt-3">Secteur d'activité<br>Localisation<br>Projet disponible</p> -->
+                         <p class="card-text mt-3">Secteur d'activité<br>Localisation<br>Projet disponible</p> 
                         <a href="#" class="btn btn-primary btn-block">Consulter</a>
                     </div>
                 </div>
@@ -193,7 +205,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                     <img src="./img/entrepriseprovisoire.jpg" class="card-img-top w-100" alt="...">
                     <div class="card-body p-0 mt-3">
                         <h5 class="card-title text-center">Nom de l'entreprise</h5>
-                        <!-- <p class="card-text mt-3">Secteur d'activité<br>Localisation<br>Projet disponible</p> -->
+                        <p class="card-text mt-3">Secteur d'activité<br>Localisation<br>Projet disponible</p>
                         <a href="#" class="btn btn-primary btn-block">Consulter</a>
                     </div>
                 </div>
@@ -204,16 +216,17 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                     <img src="./img/entrepriseprovisoire.jpg" class="card-img-top w-100" alt="...">
                     <div class="card-body p-0 mt-3">
                         <h5 class="card-title text-center">Nom de l'entreprise</h5>
-                        <!-- <p class="card-text mt-3">Secteur d'activité<br>Localisation<br>Projet disponible</p> -->
+                        <p class="card-text mt-3">Secteur d'activité<br>Localisation<br>Projet disponible</p>
                         <a href="#" class="btn btn-primary btn-block">Consulter</a>
                     </div>
                 </div>
-              </div>
+              </div> -->
               
+              <!-- partie freelance suite  ----------------------------->
               <div> 
                 <h1 class="mt-5 text-center" style="font-family: 'Oswald', serif;">Fini le métro, boulot dodo, tu peux travailler depuis ...</h1>
                 <div class="text-center">
-                  <img src="./img/freelance.png" class="card-img-top w-75 rounded" alt="BONJUOUR" />
+                  <img src="./img/freelance.png" class="card-img-top w-75 rounded" alt="" />
                 </div>
               </div>
 
@@ -221,6 +234,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
           </div>
         </div>
 
+        <!-- partie entreprise  ------------------------------------------>
         <div class="container mt-4">
           <h2 class="text-center mt-5 mb-5" style="font-family: 'Oswald', serif;" >Ils cherchent des entreprises : trouvez le talent parfait pour propulser vos projets</h2>
           
@@ -273,9 +287,9 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
         
     </div>
       <div> 
-        <h1  class="mt-5 text-center" style="font-family: 'Oswald', serif;">Au revoir la paprasse, bonjour la tranquillité grâce à...</h1>
+        <h1  class="mt-5 text-center" style="font-family: 'Oswald', serif;">Au revoir la paperasse, bonjour la tranquillité grâce à...</h1>
         <div class="text-center">
-          <img src="./img/entreprise.png" class="card-img-top w-75 rounded" alt="BONJUOUR" />
+          <img src="./img/entreprise.png" class="card-img-top w-75 rounded" alt="" />
         </div>
       </div>
     </div>
@@ -285,35 +299,30 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-3 item">
-              <h3>Services</h3>
+              <h3>Service</h3>
               <ul>
-                <li><a href="#">Web design</a></li>
-                <li><a href="#">Development</a></li>
-                <li><a href="#">Hosting</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Talents</a></li>
+                <li><a href="#">Se connecter</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">
               <h3>About</h3>
               <ul>
-                <li><a href="#">Company</a></li>
                 <li><a href="#">Team</a></li>
-                <li><a href="#">Careers</a></li>
               </ul>
             </div>
-            <div class="col-md-6 item text">
-              <h3>Noma'Tech</h3>
-              <p>
-                Praesent sed lobortis mi. Suspendisse vel placerat ligula.
-                Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis
-                tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel
-                in justo.
-              </p>
+            <div class="col-sm-6 col-md-3 item text">
+              <h3>Contact</h3>
+              <p>Nomatech</p>
+              <p>3 rue Armand Moisant</p>
+              <p>75015 Paris</p>
+              <p>01.55.65.53.57</p>
             </div>
             <div class="col item social">
-              <a href="#"><i class="icon ion-social-facebook"></i></a>
-              <a href="#"><i class="icon ion-social-twitter"></i></a>
-              <a href="#"><i class="icon ion-social-snapchat"></i></a>
-              <a href="#"><i class="icon ion-social-instagram"></i></a>
+              <a href="https://www.instagram.com/nomatech.fr/" target="_blank"><i class="icon ion-social-instagram"></i></a>
+              <br><br>
+              <a href="https://www.linkedin.com/in/noma-tech-81a019270/" target="_blank"><i class="icon ion-social-linkedin"></i></a>
             </div>
           </div>
           <p class="copyright">Noma'Tech © 2023</p>
