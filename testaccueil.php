@@ -65,7 +65,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
     <!------------------Navigation Gauche------------------>
 
     <nav class="nav-gauche">
-      <div class="bloc-menu">
+      <div class="bloc-menu-1">
         <div class="logo">
           <span class="ml-2"><a href="./testaccueil.php" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</a></span>
         </div>
