@@ -184,9 +184,9 @@ if(isset($_POST['envoi'])){
             <div class="col-sm-6 col-md-3 item">
               <h3>Service</h3>
               <ul>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Talents</a></li>
-                <li><a href="#">Se connecter</a></li>
+                <li><a href="./consultationProjet.php">Jobs</a></li>
+                <li><a href="./index.php">Talents</a></li>
+                <li><a href="./connexion.php">Se connecter</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">

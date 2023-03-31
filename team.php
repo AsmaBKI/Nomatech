@@ -107,7 +107,7 @@
     <div class="container">
         <div class="bandeauteam col-12">
           <div class="row g-3 mb-5 mt-4">
-                <div class="paragraphetext col-7 align-self-center">
+                <div class="paragraphetext col-sm-6 align-self-center">
                 <h1 class="text-center" style="font-family: 'Oswald', serif;">
                 Des opportunités pour tous!  
                 </h1>
@@ -118,7 +118,7 @@
                 L'endroit où vous vous trouvez ne devrait pas déterminer ce que vous faites 🌍...
                 </h2>
                 </div>
-                <div class="paragrapheimg col-4 mt-5 mb-5 ">
+                <div class="paragrapheimg col-sm-6 mt-5 mb-5 ">
                 <img class="" style="width:100%; border-radius:10px"  src="./img/team.png">    
                 </div>
           
@@ -131,21 +131,21 @@
     <div class="container">
             <div class="col-12">
             <div class="row g-3 mb-5 mt-4">
-                    <div class="col-3 mt-2 text-center">
+                    <div class="col-xl-3 col-sm-6 mt-2 text-center">
                         <img style="height:280px;" src="./img/Julien.png" class="w-75 rounded">
                         <p> <h4 style="font-family: 'Oswald', serif;">Co-Founder </h4> <br> CEO </p> 
                     </div >
                     
-                    <div class="col-3 mt-2 text-center">
+                    <div class="col-xl-3 col-sm-6 mt-2 text-center">
                         <img style="height:280px;" src="./img/Andy.jpeg" class="w-75 rounded"> 
                         <p><h4 style="font-family: 'Oswald', serif;">Co-Founder </h4> <br> President  </p>
                     </div >
-                    <div class="col-3 mt-2 text-center">
+                    <div class="col-xl-3 col-sm-6 mt-2 text-center">
                         <img style="height:280px;" src="./img/Aurelie.png" class="w-75 rounded">  
                         <p><h4 style="font-family: 'Oswald', serif;">Co-Founder </h4> <br> CFO  </p>
                         
                     </div >
-                    <div class="col-3 mt-2 text-center">
+                    <div class="col-xl-3 col-sm-6 mt-2 text-center">
                         <img style="height:280px;" src="./img/Asma.png" class="w-75 rounded"> 
                         <p><h4 style="font-family: 'Oswald', serif;">Co-Founder </h4> <br> CTO   </p>
                     </div >
@@ -162,9 +162,9 @@
             <div class="col-sm-6 col-md-3 item">
               <h3>Service</h3>
               <ul>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Talents</a></li>
-                <li><a href="#">Se connecter</a></li>
+                <li><a href="./consultationProjet.php">Jobs</a></li>
+                <li><a href="./index.php">Talents</a></li>
+                <li><a href="./connexion.php">Se connecter</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">

@@ -117,7 +117,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
     <div class="container">
         <div class="bandeau col-12">
           <div class="row g-3 mb-5 mt-4">
-            <div class="paragraphetext col-7 align-self-center">
+            <div class="paragraphetext col-lg-4 col-md-6 align-self-center">
               <h1 class="text-center" style="font-family: 'Oswald', serif;">
                 Voici Noma'Tech, votre partenaire job!  
               </h1>
@@ -128,8 +128,8 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                 Changez de destination, pas de boulot ! ✈️
               </h2>
             </div>
-            <div class="paragrapheimg col-4 mt-5 mb-5 ">
-              <img class="" style="width:100%; border-radius:10px"  src="./img/digitalnomad1.png">    
+            <div class="paragrapheimg col-lg-4 col-md-6 mt-5 mb-5 ">
+              <img class="w-100" style="border-radius:10px"  src="./img/digitalnomad1.png">    
             </div>
           
             </div>  
@@ -139,7 +139,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 
         <div class="container mt-4">
           <div class="row col-12">
-            <div class="row col-5">
+            <div class="row col-lg-4 col-md-6">
                 <div>
                     <h1 class="text-center " style="font-family: 'Oswald', serif;">
                     VOUS ETES <br>UNE ENTREPRISE ?  </h1>
@@ -148,7 +148,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
             </div >
              
 
-            <div class="row col-5">
+            <div class="row col-lg-4 col-md-6">
                 <div>
                     <h1 class="text-center " style="font-family: 'Oswald', serif;">
                       VOUS ETES <br>UN DIGITAL NOMAD ?  </h1>
@@ -177,7 +177,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 
               while ($item = $statement -> fetch())
             { 
-              echo '<div class="col-12 col-md-6 col-lg-3">';
+              echo '<div class="col-lg-3 col-md-6 col-sm-6 col-xs-3">';
                 echo '<div class="card img-thumbnail">';
                   echo '<img src="'.$item['image'].'" class="card-img-top w-100" style="height: 120px;" alt="..."/>';
                   echo '<div class="card-body p-0 mt-3">';

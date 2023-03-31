@@ -140,7 +140,7 @@ if(isset($_POST['envoi'])){
             <div class="col-12">
                 <div class="row g-3 mb-5 mt-4">
                     <div class="col-lg-4 col-md-6 text-center">
-                        <img src="./img/connexion.png" class="w-100 rounded"> 
+                        <img src="./img/connexion1.png" class="w-100 rounded"> 
                     </div >
                     <div class="form col-lg-4 col-md-6 mt-5">
                         <form method="POST" action=" " align="center" >
