@@ -1,8 +1,6 @@
 <?php //page pour que le freelance crée son profil
 require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 // au lieu d'écrire la phrase  : $bdd = new PDO("mysql:host=localhost;dbname=nomatech","root","root");
-
-
 ?>
 
 <html lang="en">
@@ -20,7 +18,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
   <link rel="stylesheet" href="style.css"> 
   <!-- Lien CDN pour utiliser Bootstrap 5.0.2 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Formulaire création de profil</title>
+  <title>Nomatech : Formulaire création de profil Freelance</title>
 </head>
 <body>
 
@@ -54,7 +52,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
     <!------------------Navigation Gauche------------------>
 
     <nav class="nav-gauche">
-      <div class="bloc-menu">
+      <div class="bloc-menu-1">
         <div class="logo">
           <span class="ml-2" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</span>
         </div>
@@ -150,7 +148,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                               <label>Ajouter une photo de profil : </label>
                               <input type="file" name="image">
 
-                              <div class="form-button mt-5">
+                              <div class="form-button mt-5 ml-3">
                                   <button id="submit" type="submit" class="btn btn-primary">Publier mon profil</button>
                               </div>
                           </form>

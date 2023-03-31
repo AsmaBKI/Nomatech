@@ -5,33 +5,28 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
-    />
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <title>Noma'Tech</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500;700&family=Open+Sans:wght@300;500&family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Lien vers la page CSS -->
+  <link rel="stylesheet" href="style.css"> 
+  <!-- Lien CDN pour utiliser Bootstrap 5.0.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Nomatech : Formulaire création de profil entreprise</title>
   </head>
   <body>
+
     <!------------------Navigation Central------------------>
     <header class="nav-central">
       <div class="Bloc-container1">
         <div class="logo-nav">
-          <img src="./img/nomatech.png" alt="Logo de Noma'Tech" />
+          <span style="font-family: 'Alkatra', serif; font-size: 40px; color: #240085">Noma'tech</span>
         </div>
       </div>
 
@@ -57,9 +52,9 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
     <!------------------Navigation Gauche------------------>
 
     <nav class="nav-gauche">
-      <div class="bloc-menu">
-        <div class="logo">
-          <img src="./img/nomatech_gauche.png" alt="Logo de Noma'Tech" />
+      <div class="bloc-menu-1">
+      <div class="logo">
+          <span class="ml-2" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</span>
         </div>
       </div>
       <div class="bloc-menu">
@@ -110,7 +105,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                         <h3>Créer votre profil Entreprise</h3>
                         <p>Avant de trouver le freelance qui vous fera voyager, merci de compléter votre profil</p>
                         <!-- formulaire en méthode GET : on récupère le résultat sur la page pageFreelanceFormProfilValidation.php-->
-                        <form action="pageEntrepriseFormProfilValidation.php"  method="post" class="requires-validation">
+                        <form action="pageEntrepriseFormProfilValidation.php"  method="post" class="requires-validation" enctype="multipart/form-data">
 
                           <div class="col-md-12 mt-5">
                             <label for="exampleFormControlInput1" class="form-label">Quel est le nom de votre entreprise (ce nom sera visible par les freelances) ?</label>
@@ -151,10 +146,9 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                           <!--<label>Ajouter le logo de votre entreprise </label>
                             <input type="file" name="photo"> -->
 
-                          <div class="form-button mt-3 ml-3">
+                          <div class="form-button mt-5 ml-3">
                             <button id="submit" type="submit" class="btn btn-primary">Publier mon entreprise</button>
                           </div>
-                          <br><br>
                         </form>
               </div>
             </div>
@@ -163,7 +157,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
       </div>
     </div>
    <!------------------ FOOTER ------------------>
-   <div class="footer-dark">
+   <div class="footer-dark mt-5">
    <footer>
         <div class="container">
           <div class="row">
