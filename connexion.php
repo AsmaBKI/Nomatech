@@ -167,16 +167,16 @@ if(isset($_POST['envoi'])){
     
 
 <!------------------ FOOTER ------------------>
-<div class="footer-dark mt-5">
-<footer>
+    <div class="footer-dark mt-5">
+      <footer>
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-3 item">
               <h3>Service</h3>
               <ul>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Talents</a></li>
-                <li><a href="#">Se connecter</a></li>
+                <li><a href="./consultationProjet.php">Jobs</a></li>
+                <li><a href="./index.php">Talents</a></li>
+                <li><a href="./connexion.php">Se connecter</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">

@@ -54,7 +54,7 @@ require_once "./admin/databaseNomaTech.php";
     <!------------------Navigation Gauche------------------>
 
     <nav class="nav-gauche">
-      <div class="bloc-menu">
+      <div class="bloc-menu-1">
         <div class="logo">
           <span class="ml-2"><a href="./testaccueil.php" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085">Noma'tech</a></span>
         </div>
@@ -107,7 +107,7 @@ require_once "./admin/databaseNomaTech.php";
 
             <form class="col-10" action = "" method = "GET" align="center">
               <input type = "search" class="img-thumbnail border-primary" name = "terme">
-              <input type = "submit" class="col-2 mt-1 btn btn-primary" name = "s" value = "Rechercher">
+              <input type = "submit" class="col-2 mt-1 btn btn-primary" style="font-family: Oswald, serif;" name = "s" value = "Rechercher">
             </form>
             
             <!-- ********************** AFFICHAGE DE TOUS LES PROJETS ************************* -->
@@ -133,7 +133,7 @@ require_once "./admin/databaseNomaTech.php";
                         echo '<p> Réponse sous '. $item['reponse'] .' après la date limite des candidatures </p>';
                         echo '<p> Date de début du projet : '. $item['dateinit'] .'</p>';
                         
-                        echo '<a href ="#" class="btn btn-default btn-primary" role="button">Contacter</span> </a>';
+                        echo '<a href ="#" class="btn btn-default btn-primary" style="font-family: Oswald, serif;" role="button">Contacter</span> </a>';
                             
                     echo '</div>';
                 echo '</div>';
@@ -154,9 +154,9 @@ require_once "./admin/databaseNomaTech.php";
             <div class="col-sm-6 col-md-3 item">
               <h3>Service</h3>
               <ul>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Talents</a></li>
-                <li><a href="#">Se connecter</a></li>
+                <li><a href="./consultationProjet.php">Jobs</a></li>
+                <li><a href="./index.php">Talents</a></li>
+                <li><a href="./connexion.php">Se connecter</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">
