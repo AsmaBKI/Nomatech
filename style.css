@@ -63,7 +63,7 @@ body {
   top: 40px;
   left: 0px;
   height: 2px;
-  background: #0e76a8;
+  background: #240085;
   transition: all 0.2s ease-out;
 }
 .bloc-container2 a:hover::after {
@@ -86,7 +86,7 @@ body {
 }
 .inscription:hover {
   transition: all 0.2 ease-out;
-  /* L'image est grossie de 25% */
+  /* L'image est grossie de 5% */
   -webkit-transform:scale(1.05); /* Safari et Chrome */
   -moz-transform:scale(1.05); /* Firefox */
   -ms-transform:scale(1.05); /* Internet Explorer 9 */
@@ -140,7 +140,7 @@ body {
   width: 0px;
   margin: 5px auto 0 auto;
   height: 2px;
-  background: #0e76a8;
+  background: #240085;
   transition: all 0.2s ease-out;
 }
 
