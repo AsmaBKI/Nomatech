@@ -35,7 +35,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 
         <a href="./index.php">Talents</a>
 
-        <a href="#">Se connecter</a>
+        <a href="./connexion.php">Se connecter</a>
 
         <button class="inscription" onclick="window.location.href = './inscrip2803.php';">
           S'inscrire
@@ -59,22 +59,22 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Jobs</a>
+          <a href="./consultationProjet.php">Jobs</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Talents</a>
+          <a href="./index.php">Talents</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Se connecter</a>
+          <a href="./connexion.php">Se connecter</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="./inscription.php">S'inscrire gratuitement</a>
+          <a href="./inscrip2803.php">S'inscrire gratuitement</a>
         </span>
       </div>
       <div class="bloc-menu">
@@ -103,8 +103,8 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
               <div class="form-holder">
                   <div class="form-content">
                       <div class="form-items">
-                          <h3>Créer votre profil Freelance</h3>
-                          <p>Avant de trouver la mission de vos rêves, merci de compléter votre profil</p>
+                          <h3 style="font-family: 'Oswald', serif;">Créer votre profil Freelance</h3>
+                          <p style="font-family: 'Oswald', serif;">Avant de trouver la mission de vos rêves, merci de compléter votre profil</p>
                           <!-- formulaire en méthode GET : on récupère le résultat sur la page pageFreelanceFormProfilValidation.php-->
                           <form action="pageFreelanceFormProfilValidation.php"  method="post" class="requires-validation" enctype="multipart/form-data">
                             <div class="col-md-12 mt-5">
@@ -149,7 +149,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                               <input type="file" name="image">
 
                               <div class="form-button mt-5 ml-3">
-                                  <button id="submit" type="submit" class="btn btn-primary">Publier mon profil</button>
+                                  <button id="submit" type="submit" class="btn btn-primary" style="font-family: 'Oswald', serif;">Publier mon profil</button>
                               </div>
                           </form>
                       </div>
@@ -166,9 +166,9 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
             <div class="col-sm-6 col-md-3 item">
               <h3>Service</h3>
               <ul>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Talents</a></li>
-                <li><a href="#">Se connecter</a></li>
+                <li><a href="./consultationProjet.php">Jobs</a></li>
+                <li><a href="./index.php">Talents</a></li>
+                <li><a href="./connexion.php">Se connecter</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">

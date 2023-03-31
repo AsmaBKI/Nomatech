@@ -82,7 +82,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 
         <a href="./index.php">Talents</a>
 
-        <a href="#">Se connecter</a>
+        <a href="./connexion.php">Se connecter</a>
 
         <button class="inscription" onclick="window.location.href = './inscrip2803.php';">
           S'inscrire
@@ -99,29 +99,29 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
     <!------------------Navigation Gauche------------------>
 
     <nav class="nav-gauche">
-      <div class="bloc-menu">
+      <div class="bloc-menu-1">
         <div class="logo">
           <span class="ml-2" style="font-family: 'Alkatra', serif; font-size: 30px; color: #240085"> <a href="./testaccueil.php">Noma'tech</a></span>
         </div>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Jobs</a>
+          <a href="./consultationProjet">Jobs</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Talents</a>
+          <a href="./index.php">Talents</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">Se connecter</a>
+          <a href="./connexion.php">Se connecter</a>
         </span>
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="./inscription.php">S'inscrire gratuitement</a>
+          <a href="./inscrip2803.php">S'inscrire gratuitement</a>
         </span>
       </div>
       <div class="bloc-menu">
@@ -177,8 +177,8 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
               </tbody>
             </table>' ; ?> </p>
               <!-- <p> <img class="w-25" src="https://images.unsplash.com/photo-1571942948809-74637bfc59b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGJha2VyaWV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"> </p> -->
-              <a href="pageFreelanceFormProfil.php" class="btn btn-light mt-5"> Revenir à la page précédente </a>
-              <a href="index.php" class="btn btn-light mt-5"> Liste des job </a>
+              <a href="pageFreelanceFormProfil.php" class="btn btn-light mt-5" style="font-family: 'Oswald', serif;"> Revenir à la page précédente </a>
+              <a href="index.php" class="btn btn-light mt-5" style="font-family: 'Oswald', serif;"> Liste des job </a>
           </div>
               <!------------------ FOOTER ------------------>
     <div class="footer-dark mt-5">
@@ -188,9 +188,9 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
             <div class="col-sm-6 col-md-3 item">
               <h3>Service</h3>
               <ul>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Talents</a></li>
-                <li><a href="#">Se connecter</a></li>
+                <li><a href="consultationProjet.php">Jobs</a></li>
+                <li><a href="index.php">Talents</a></li>
+                <li><a href="./connexion.php">Se connecter</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">
