@@ -1,9 +1,3 @@
-<?php
-//se connection a une session utilisateur
-session_start();
-require_once "./admin/databaseNomaTech.php";
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -17,11 +11,22 @@ require_once "./admin/databaseNomaTech.php";
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./style.css">    
-    <title>Noma'Tech : Liste des projets disponibles</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Noma'Tech</title>
   </head>
   <body>
     <!------------------Navigation Central------------------>
@@ -44,7 +49,7 @@ require_once "./admin/databaseNomaTech.php";
         </button>
       </div>
     </header>
-    <!------------------ Menu Burger------------------>
+    <!------------------ Menu Burger--------------------->
     <div class="bouton-rond">
       <div class="cont-ligne">
         <div class="ligne"></div>
@@ -97,66 +102,69 @@ require_once "./admin/databaseNomaTech.php";
         </div>
       </div>
     </nav>
-
-    <h1 class="text-logo mt-5" style="font-family: 'Oswald', serif;" > Liste des projets disponibles </h1>
-
+    <!------------------ team ------------------>
+    <div class="body-part2" style="background-color: #d8c7e1; border-radius: 10px;">
     <div class="container">
-      <div class="col-12">
-        <div class="row g-3 mb-5 mt-4">
-            <!-- ********************** BARRE DE RECHERCHE ************************* -->
-
-            <form class="col-10" action = "" method = "GET" align="center">
-              <input type = "search" class="img-thumbnail border-primary" name = "terme">
-              <input type = "submit" class="col-2 mt-1 btn btn-primary" style="font-family: Oswald, serif;" name = "s" value = "Rechercher">
-            </form>
-            
-            <!-- ********************** AFFICHAGE DE TOUS LES PROJETS ************************* -->
-
-          <?php
-            //$db = new PDO("mysql:host=localhost;dbname=nomatech","root","root");
-            $statement = $bdd -> query('SELECT projet.id_projet, projet.project, projet.description, projet.budget, projet.date, projet.dateinit, projet.reponse FROM projet');
-
-            echo '<div class="tab-content">';
-            echo '<div class="tab-pane active". id="1"></div>';
-            echo '<div class="row">';
-
-            while ($item = $statement -> fetch())
-            {
-                echo '<div class="col-sm-6 col-md-10 mt-4">';
-                    echo '<div class="img-thumbnail border-primary">';
-
-                        //echo '<img class="img-photo" src="'.$item['image'].'" alt="Pas de photo disponible">';
-                        echo '<h4> '. $item['project'].'</h4>';
-                        echo '<p> Description : <br>'. $item['description'] .'</p>';
-                        echo '<p> Budget journalier : '. $item['budget'] .'</p>';
-                        echo '<p> Date limite pour les candidatures : '. $item['date'] .'</p>';
-                        echo '<p> Réponse sous '. $item['reponse'] .' après la date limite des candidatures </p>';
-                        echo '<p> Date de début du projet : '. $item['dateinit'] .'</p>';
-                        
-                        echo '<a href ="#" class="btn btn-default btn-primary" style="font-family: Oswald, serif;" role="button">Contacter</span> </a>';
-                            
-                    echo '</div>';
-                echo '</div>';
-            }
-
-            echo '</div>';
-            echo '</div> ';
-          ?> 
+        <div class="bandeauteam col-12">
+          <div class="row g-3 mb-5 mt-4">
+                <div class="paragraphetext col-7 align-self-center">
+                <h1 class="text-center" style="font-family: 'Oswald', serif;">
+                Des opportunités pour tous!  
+                </h1>
+                <!-- <h2 class="text-center" style="font-family: 'Alkatra', serif;">
+                Vous allez adorer cette nouvelle façon de collaborer !</h2> -->
+                <br>
+                <h2 class="text-center" style="font-family: 'Oswald', serif;">
+                L'endroit où vous vous trouvez ne devrait pas déterminer ce que vous faites 🌍...
+                </h2>
+                </div>
+                <div class="paragrapheimg col-4 mt-5 mb-5 ">
+                <img class="" style="width:100%; border-radius:10px"  src="./img/team.png">    
+                </div>
+          
+            </div>  
+            </div>
+        </div> 
         </div>
-      </div>
-    </div>
+       
+    
+    <div class="container">
+            <div class="col-12">
+            <div class="row g-3 mb-5 mt-4">
+                    <div class="col-3 mt-2 text-center">
+                        <img style="height:280px;" src="./img/Julien.png" class="w-75 rounded">
+                        <p> <h4 style="font-family: 'Oswald', serif;">Co-Founder </h4> <br> CEO </p> 
+                    </div >
+                    
+                    <div class="col-3 mt-2 text-center">
+                        <img style="height:280px;" src="./img/Andy.jpeg" class="w-75 rounded"> 
+                        <p><h4 style="font-family: 'Oswald', serif;">Co-Founder </h4> <br> President  </p>
+                    </div >
+                    <div class="col-3 mt-2 text-center">
+                        <img style="height:280px;" src="./img/Aurelie.png" class="w-75 rounded">  
+                        <p><h4 style="font-family: 'Oswald', serif;">Co-Founder </h4> <br> CFO  </p>
+                        
+                    </div >
+                    <div class="col-3 mt-2 text-center">
+                        <img style="height:280px;" src="./img/Asma.png" class="w-75 rounded"> 
+                        <p><h4 style="font-family: 'Oswald', serif;">Co-Founder </h4> <br> CTO   </p>
+                    </div >
+                </div >
+                </div>
+            </div>
+        </div>
 
     <!------------------ FOOTER ------------------>
-    <div class="footer-dark mt-5">
-    <footer>
+<div class="footer-dark mt-5">
+<footer>
         <div class="container">
           <div class="row">
             <div class="col-sm-6 col-md-3 item">
               <h3>Service</h3>
               <ul>
-                <li><a href="./consultationProjet.php">Jobs</a></li>
-                <li><a href="./index.php">Talents</a></li>
-                <li><a href="./connexion.php">Se connecter</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Talents</a></li>
+                <li><a href="#">Se connecter</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item">

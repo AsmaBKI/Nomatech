@@ -132,7 +132,7 @@ if(!$_SESSION['email'] AND !$_SESSION['mdp']){
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">A propos de</a>
+          <a href="./team.php">A propos de</a>
         </span>
       </div>
       <div class="bloc-menu">
@@ -201,7 +201,7 @@ if(!$_SESSION['email'] AND !$_SESSION['mdp']){
                         <div class="col-sm-6 col-md-3 item">
                             <h3>About</h3>
                             <ul>
-                                <li><a href="#">Team</a></li>
+                                <li><a href="./team.php">Team</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-6 col-md-3 item text">

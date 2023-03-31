@@ -117,7 +117,7 @@ if(isset($_POST['envoi'])){
       </div>
       <div class="bloc-menu">
         <span class="nav-menu-item">
-          <a href="#">A propos de</a>
+          <a href="./team.php">A propos de</a>
         </span>
       </div>
       <div class="bloc-menu">
@@ -139,7 +139,10 @@ if(isset($_POST['envoi'])){
         <div class="container">
             <div class="col-12">
                 <div class="row g-3 mb-5 mt-4">
-                    <div class="form col-7 mt-5">
+                    <div class="col-lg-4 col-md-6 text-center">
+                        <img src="./img/connexion.png" class="w-100 rounded"> 
+                    </div >
+                    <div class="form col-lg-4 col-md-6 mt-5">
                         <form method="POST" action=" " align="center" >
                             <div>
                                 <label class="form-label" for="email" style="font-family: 'Oswald', serif;">Votre e-mail</label>
@@ -158,9 +161,6 @@ if(isset($_POST['envoi'])){
                             </div>
                         </form>
                     </div>
-                    <div class="col-5 text-center">
-                        <img src="./img/connexion.png" class="w-75 rounded"> 
-                    </div >
                 </div>
             </div>
         </div>
@@ -182,7 +182,7 @@ if(isset($_POST['envoi'])){
             <div class="col-sm-6 col-md-3 item">
               <h3>About</h3>
               <ul>
-                <li><a href="#">Team</a></li>
+                <li><a href="./team.php">Team</a></li>
               </ul>
             </div>
             <div class="col-sm-6 col-md-3 item text">
