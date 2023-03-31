@@ -102,54 +102,54 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
           <div class="form-holder">
             <div class="form-content">
               <div class="form-items">
-                        <h3>Créer votre profil Entreprise</h3>
-                        <p>Avant de trouver le freelance qui vous fera voyager, merci de compléter votre profil</p>
-                        <!-- formulaire en méthode GET : on récupère le résultat sur la page pageFreelanceFormProfilValidation.php-->
-                        <form action="pageEntrepriseFormProfilValidation.php"  method="post" class="requires-validation" enctype="multipart/form-data">
+                  <h3>Créer votre profil Entreprise</h3>
+                  <p>Avant de trouver le freelance qui vous fera voyager, merci de compléter votre profil</p>
+                  <!-- formulaire en méthode GET : on récupère le résultat sur la page pageFreelanceFormProfilValidation.php-->
+                  <form action="pageEntrepriseFormProfilValidation.php"  method="POST" class="requires-validation" enctype="multipart/form-data">
 
-                          <div class="col-md-12 mt-5">
-                            <label for="exampleFormControlInput1" class="form-label">Quel est le nom de votre entreprise (ce nom sera visible par les freelances) ?</label>
-                            <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Noma'Tech" required>
-                          </div>
+                    <div class="col-md-12 mt-5">
+                      <label for="exampleFormControlInput1" class="form-label">Quel est le nom de votre entreprise (ce nom sera visible par les freelances) ?</label>
+                      <input type="text" name="name" class="form-control" id="exampleFormControlInput1" placeholder="Noma'Tech" required>
+                    </div>
 
-                          <div class="col-md-12 mt-4">
-                            <label for="exampleFormControlInput1" class="form-label">Quel est votre secteur d'activité ? 💻</label>
-                            <input type="text" name="activity" class="form-control" id="exampleFormControlInput1" placeholder="Recrutement de talent" required>
-                          </div>
+                    <div class="col-md-12 mt-4">
+                      <label for="exampleFormControlInput1" class="form-label">Quel est votre secteur d'activité ? 💻</label>
+                      <input type="text" name="activity" class="form-control" id="exampleFormControlInput1" placeholder="Recrutement de talent" required>
+                    </div>
 
-                          <div class="col-md-12 mt-4">
-                            <label for="exampleFormControlInput1" class="form-label">Quel est votre numéro de SIRET ?</label>
-                            <input type="text" class="form-control" name="siret" id="exampleFormControlInput1" placeholder=""required>
-                          </div>
+                    <div class="col-md-12 mt-4">
+                      <label for="exampleFormControlInput1" class="form-label">Quel est votre numéro de SIRET ?</label>
+                      <input type="text" class="form-control" name="siret" id="exampleFormControlInput1" placeholder=""required>
+                    </div>
 
-                          <div class="col-md-12 mt-4">
-                            <label for="exampleFormControlInput1" class="form-label">Dans quel pays êtes-vous installé? 🌍</label>
-                            <input type="text" class="form-control" name="country" id="exampleFormControlInput1" placeholder="La France"required>
-                          </div>
+                    <div class="col-md-12 mt-4">
+                      <label for="exampleFormControlInput1" class="form-label">Dans quel pays êtes-vous installé? 🌍</label>
+                      <input type="text" class="form-control" name="country" id="exampleFormControlInput1" placeholder="La France"required>
+                    </div>
 
-                          <div class="col-md-12 mt-4">
-                            <label for="exampleFormControlInput1" class="form-label">Quel est le nom de votre représentant ? (ce nom sera visible par les freelances) ?</label>
-                            <input type="text" class="form-control" name="namerp" id="exampleFormControlInput1" placeholder="Marie B. , Romain Duchesne..." required>
-                          </div>
+                    <div class="col-md-12 mt-4">
+                      <label for="exampleFormControlInput1" class="form-label">Quel est le nom de votre représentant ? (ce nom sera visible par les freelances) ?</label>
+                      <input type="text" class="form-control" name="namerp" id="exampleFormControlInput1" placeholder="Marie B. , Romain Duchesne..." required>
+                    </div>
 
-                          <div class="col-md-12 mt-4">
-                            <label for="exampleFormControlInput1" class="form-label">Quel poste occupe votre représentant ? (cette information sera visible par les freelances) ?</label>
-                            <input type="text" class="form-control" name="postrp" id="exampleFormControlInput1" placeholder="Responsable RH, PDG..." required>
-                          </div>
+                    <div class="col-md-12 mt-4">
+                      <label for="exampleFormControlInput1" class="form-label">Quel poste occupe votre représentant ? (cette information sera visible par les freelances) ?</label>
+                      <input type="text" class="form-control" name="postrp" id="exampleFormControlInput1" placeholder="Responsable RH, PDG..." required>
+                    </div>
 
-                           <br>
-                          <div class="col-md-12 mb-4">
-                            <label for="exampleFormControlTextarea1" class="form-label">Votre description 🖋️ </label>
-                            <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3" placeholder="Noma'Tech, c'est 'THE PLACE' pour trouver des talents de la tech' qui bosse les pieds dans l'eau " required ></textarea>
-                          </div>
+                      <br>
+                    <div class="col-md-12 mb-4">
+                      <label for="exampleFormControlTextarea1" class="form-label">Votre description 🖋️ </label>
+                      <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3" placeholder="Noma'Tech, c'est 'THE PLACE' pour trouver des talents de la tech' qui bosse les pieds dans l'eau " required ></textarea>
+                    </div>
 
-                          <!--<label>Ajouter le logo de votre entreprise </label>
-                            <input type="file" name="photo"> -->
+                    <!--<label>Ajouter le logo de votre entreprise </label>
+                      <input type="file" name="photo"> -->
 
-                          <div class="form-button mt-5 ml-3">
-                            <button id="submit" type="submit" class="btn btn-primary">Publier mon entreprise</button>
-                          </div>
-                        </form>
+                    <div class="form-button mt-5 ml-3">
+                      <button id="submit" type="submit" class="btn btn-primary">Publier mon entreprise</button>
+                    </div>
+                  </form>
               </div>
             </div>
           </div>

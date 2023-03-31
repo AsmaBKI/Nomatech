@@ -111,7 +111,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
         <div class="container mt-5">
             <!-- <a href="./admin/index.php" class="btn btn-light"> Liste des produits </a> 
             <a href="./admin/insert.php" class="btn btn-light"> Ajouter un produit </a>  -->
-            <h1 class="text-logo mb-5" style="font-family: 'Oswald', serif;"> Liste des freelances disponibles </h1>
+            <h1 class="text-logo mb-5" style="font-family: Oswald, serif;"> Liste des freelances disponibles </h1>
             
             <div class="text-center mb-5">
                 <img src="./img/background.jpg" class="card-img-top w-25 rounded" alt="Dessin de trajet" />
@@ -137,7 +137,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                             echo '<div class="price"> TJM : '. $item['freelance_tjm'] .'€'. '</div>';
                             echo '<div class="caption1">';
                                 
-                                echo '<a href ="" class="btn btn-default btn-primary mt-3" role="button">Contacter '.$item['freelance_name'].'</span> </a>';
+                                echo '<a href ="" class="btn btn-default btn-primary mt-3" style="font-family: Oswald, serif;" role="button">Contacter '.$item['freelance_name'].'</span> </a>';
                             echo '</div>';
                     echo '</div>';
                 echo '</div>';

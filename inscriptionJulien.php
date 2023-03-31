@@ -111,7 +111,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                     <div class="card-body p-0 mt-1">
                         <h5 class="card-title text-center">Pour les freelances</h5>
                         <p class="card-text">Vous cherchez des missions afin de proposer vos services à des entreprises françaises en toute liberté géographique ?</p>
-                        <a href="./pageFreelanceFormProfil.php" class="btn btn-primary btn-block">Cliquez ici</a>
+                        <a href="./pageFreelanceFormProfil.php" class="btn btn-primary btn-block" style="font-family: 'Oswald', serif;">Cliquez ici</a>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
                     <div class="card-body p-0 mt-1">
                         <h5 class="card-title text-center">Pour les entreprises</h5>
                         <p class="card-text">Vous recherchez des talents de façon ponctuelle, le full remote et les décalages horaires ne sont pas un problème ?</p>
-                        <a href="./pageEntrepriseFormProfil.php" class="btn btn-primary btn-block">Cliquez ici</a>
+                        <a href="./pageEntrepriseFormProfil.php" class="btn btn-primary btn-block" style="font-family: 'Oswald', serif;">Cliquez ici</a>
                     </div>
                 </div>
             </div>
