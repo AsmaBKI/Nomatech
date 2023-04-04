@@ -119,7 +119,7 @@
 </p>
             </div>
             <div class="paragrapheimg col-4 mt-5 mb-5 ">
-              <img class="" style="width:100%; border-radius:10px"  src="./img/price.png">    
+              <img class="" style="width:100%; border-radius:10px"  src="./style/img/price.png">    
             </div>
           </div>  
         </div>
