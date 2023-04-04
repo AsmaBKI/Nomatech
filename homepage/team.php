@@ -147,6 +147,32 @@
 	</div>
 	</div>
 
+	<!-- Contact -->
+
+    <div class="body-part2 ">
+      <div class="container">
+        <div class="bandeauteam col-12">
+          <div class="row g-3 mb-5 mt-4">
+                <div class="paragraphetext col-7 align-self-center">
+                <h1 class="text-center" style="font-family: 'Oswald', serif;">
+                Nous avons bien reçu votre message!  
+                </h1>
+                <!-- <h2 class="text-center" style="font-family: 'Alkatra', serif;">
+                Vous allez adorer cette nouvelle façon de collaborer !</h2> -->
+                <br>
+                <h2 class="text-center" style="font-family: 'Oswald', serif;">
+                Nous y répondrons dans les plus brefs délais. Merci de votre intérêt.
+                </h2>
+                </div>
+                <div class="paragrapheimg col-4 mt-5 mb-5 ">
+                <img class="" style="width:100%; border-radius:10px"  src="./style/img/enveloppe.png">    
+                </div>
+          
+            </div>  
+            </div>
+        </div> 
+      </div>
+
 	<!------------------ FOOTER ------------------>
 	<div class="footer-dark mt-5">
 		<footer>
