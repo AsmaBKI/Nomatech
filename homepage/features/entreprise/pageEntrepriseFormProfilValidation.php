@@ -173,6 +173,7 @@ $statement = $bdd->query("INSERT INTO entreprise(entreprise.name, entreprise.act
 						<h3>About</h3>
 						<ul>
 							<li><a href="../../team.php">Team</a></li>
+							<li><a href="../../princing.php">Prix</a></li>
 						</ul>
 					</div>
 					<div class="col-sm-6 col-md-3 item text">

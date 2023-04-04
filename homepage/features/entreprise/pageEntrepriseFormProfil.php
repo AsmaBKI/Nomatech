@@ -176,6 +176,7 @@ require_once "../../../admin/databaseNomaTech.php"; // connection à la base de 
 						<h3>About</h3>
 						<ul>
 							<li><a href="../../team.php">Team</a></li>
+							<li><a href="../../princing.php">Prix</a></li>
 						</ul>
 					</div>
 					<div class="col-sm-6 col-md-3 item text">
