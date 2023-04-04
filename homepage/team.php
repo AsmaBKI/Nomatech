@@ -149,29 +149,34 @@
 
 	<!-- Contact -->
 
-    <div class="body-part2 ">
-      <div class="container">
-        <div class="bandeauteam col-12">
-          <div class="row g-3 mb-5 mt-4">
-                <div class="paragraphetext col-7 align-self-center">
-                <h1 class="text-center" style="font-family: 'Oswald', serif;">
-                Nous avons bien reçu votre message!  
-                </h1>
-                <!-- <h2 class="text-center" style="font-family: 'Alkatra', serif;">
-                Vous allez adorer cette nouvelle façon de collaborer !</h2> -->
-                <br>
-                <h2 class="text-center" style="font-family: 'Oswald', serif;">
-                Nous y répondrons dans les plus brefs délais. Merci de votre intérêt.
-                </h2>
+    <div class="container">
+            <div class="col-12">
+                <div class="row g-3 mb-5 mt-5">
+                    <div class="form col-7 mt-5">
+                        <form method="" action="./contact.php" align="center" >
+                            <div>
+                                <label class="form-label" for="email" style="font-family: 'Oswald', serif;">Votre e-mail</label>
+                                <input type="email" id="email" class="form-control" name="email" placeholder="monadresse@mail.com" required>
+                                <br/>
+                            </div>
+
+                            <div>
+                                <label class="form-label" for="message" style="font-family: 'Oswald', serif;">Votre message </label>
+                                 <textarea name="message" class="form-control" id="message" cols="30" rows="5" placeholder="Bonjour, je vous contacte car ..."></textarea>
+                                <br/>
+                            </div>
+
+                            <div>
+                                <button type="submit" name ="envoi" class="btn btn-primary" style="font-family: 'Oswald', serif;" onclick="window.location.href = './contact.php';"> ENVOYER </button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-5 text-center">
+                        <img src="./style/img/enveloppe.png" class="w-75 rounded"> 
+                    </div >
                 </div>
-                <div class="paragrapheimg col-4 mt-5 mb-5 ">
-                <img class="" style="width:100%; border-radius:10px"  src="./style/img/enveloppe.png">    
-                </div>
-          
-            </div>  
             </div>
-        </div> 
-      </div>
+        </div>
 
 	<!------------------ FOOTER ------------------>
 	<div class="footer-dark mt-5">
