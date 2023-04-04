@@ -10,7 +10,6 @@ body {
   height: 100%;
 }
 body {
-  
   display: flex;
   flex-direction: column;
   padding-top: 65px;
@@ -82,16 +81,16 @@ body {
   background-color: white;
   font-weight: bolder;
   border-color: #f3e4f3;
-  color : #240085;
+  color: #240085;
 }
 .inscription:hover {
   transition: all 0.2 ease-out;
   /* L'image est grossie de 5% */
-  -webkit-transform:scale(1.05); /* Safari et Chrome */
-  -moz-transform:scale(1.05); /* Firefox */
-  -ms-transform:scale(1.05); /* Internet Explorer 9 */
-  -o-transform:scale(1.05); /* Opera */
-  transform:scale(1.05);
+  -webkit-transform: scale(1.05); /* Safari et Chrome */
+  -moz-transform: scale(1.05); /* Firefox */
+  -ms-transform: scale(1.05); /* Internet Explorer 9 */
+  -o-transform: scale(1.05); /* Opera */
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1200px) {
@@ -364,7 +363,7 @@ input::placeholder {
   top: 10px;
 }
 
-form button {
+/* form button {
   font-size: 20px;
   min-width: 150px;
   display: block;
@@ -377,11 +376,11 @@ form button {
   font-family: Raleway;
   font-weight: bolder;
   cursor: pointer;
-}
-form button:hover {
+} */
+/* form button:hover {
   background-color: #0e76a8;
   color: white;
-}
+} */
 
 /*--------------------- Connexion ---------------------*/
 /*.content-connexion {
@@ -508,6 +507,76 @@ form .pass-link a:hover,
 form .signup-link a:hover {
   text-decoration: underline;
 }*/
+
+/*---------------------Messagerie---------------------*/
+.container-msg {
+  height: 155px;
+  padding: 20px 30px 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.txt-msg {
+  width: 50%;
+  height: 80px;
+}
+.txt-msg textarea {
+  resize: none;
+  border: 1px solid rgb(116, 114, 114);
+
+  width: 100%;
+  height: 70px;
+  border-radius: 50px;
+  padding: 20px;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+.txt-msg textarea::placeholder {
+  color: #ddd;
+}
+.sub-msg {
+  text-align: center;
+  display: flex;
+}
+.sub-msg button {
+  height: 70px;
+  margin-bottom: 10px;
+  width: 65px;
+  background-color: #0d6efd;
+  border-radius: 50px;
+  position: absolute;
+  top: 28%;
+  left: 75%;
+}
+.sub-msg button:hover {
+  background-color: #6fbced;
+}
+/*---------------------Message---------------------*/
+.msg-in {
+  padding: 20px;
+  color: #fff;
+  line-height: 25px;
+  max-width: 90%;
+
+  display: inline-block;
+  text-align: left;
+  border-radius: 50px;
+  background-color: #58b666;
+}
+
+.msg-out {
+  padding: 20px;
+  color: #fff;
+  line-height: 25px;
+
+  max-width: 90%;
+  display: inline-block;
+  text-align: left;
+  border-radius: 50px;
+  background-color: #6fbced;
+}
+
 /*---------------------FOOTER---------------------*/
 .footer-dark {
   padding: 50px 0;
@@ -617,15 +686,76 @@ h1.text-logo {
 }
 
 .body-part1 {
-    background-color: #f2d2f3;
-    border-radius: 10px;
-} 
+  background-color: #f2d2f3;
+  border-radius: 10px;
+}
 
 .body-part-3 {
   background-color: #e4caf0;
 }
 
-.body-part2 {  
-  background-color: #d8c7e1 !important;
-  border-radius: 10px !important;
+/* ---------------------Message---------------------/ */
+.msg-in {
+  padding: 20px;
+  color: #fff;
+  line-height: 25px;
+  max-width: 90%;
+  text-align: left;
+  border-radius: 50px;
+  background-color: #58b666;
 }
+
+.msg-out {
+  padding: 20px;
+  color: #fff;
+  line-height: 25px;
+
+  max-width: 90%;
+  
+  text-align: left;
+  border-radius: 50px;
+  background-color: #6fbced;
+}
+
+#messagesenvoyes {
+  display: flex;
+  flex-direction: column;
+}
+/* ---------------------Bouton inscription page Acceuil---------------------/ */
+.cta{
+  width:100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.btn.btn-light{
+    height: 80px;
+    padding:10px;
+    border-radius: 50px;
+    background-color: #e4caf0;
+    font-family: 'Oswald', serif;   
+
+}
+.btn.btn-light:hover{
+  cursor:pointer;
+  color:black; 
+  background-color: white;
+  border: 1px solid black; 
+
+}
+.btn.btn-light1{
+  height: 80px;
+  padding:10px;
+  border-radius: 50px;
+  background-color: #e4caf0;
+  font-family: 'Oswald', serif; 
+  border: 2px solid white;  
+
+}
+.btn.btn-light1:hover{
+cursor:pointer;
+color:black;
+border: 1px solid black;
+background-color:white; }

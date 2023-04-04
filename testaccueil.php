@@ -143,6 +143,7 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 						VOUS ETES <br>UN DIGITAL NOMAD ? </h1>
 				</div>
 				<img src="./img/img-freelance.png">
+		
 			</div>
 		</div>
 	</div>
@@ -215,6 +216,9 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 					<h1 class="mt-5 text-center" style="font-family: 'Oswald', serif;">Fini le métro, boulot dodo, tu peux travailler depuis ...</h1>
 					<div class="text-center">
 						<img src="./img/freelance.png" class="card-img-top w-75 rounded" alt="" />
+						<div class="cta">
+							<button onclick="window.location.href = './inscrip2803.php';" type="button" class="btn btn-light1">Freelance? Je m'inscris 🚀</button>
+						</div>
 					</div>
 				</div>
 
@@ -297,6 +301,10 @@ require_once "./admin/databaseNomaTech.php"; // connection à la base de donnée
 			<div class="text-center">
 				<img src="./img/entreprise.png" class="card-img-top w-75 rounded" alt="" />
 			</div>
+			<div class="cta">
+				<button onclick="window.location.href = './inscrip2803.php';" type="button" class="btn btn-light">J'inscris mon entreprise 🚀</button>
+			</div>
+
 		</div>
 	</div>
 	<!------------------ FOOTER ------------------>

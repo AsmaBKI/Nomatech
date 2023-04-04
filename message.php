@@ -83,15 +83,17 @@ if(!$_SESSION['email'] AND !$_SESSION['mdp']){
             while($messages = $recupMessages->fetch()){
                 if($messages['id_destinataire'] == $_SESSION['id_user']){
         ?>  
-        <div class="msg-in">
-            <p><?= $messages['messages'];?></p>
-        </div> 
-        <?php 
-                }elseif($messages['id_destinataire'] == $getid){
-        ?>  
-        <div class="msg-out">
-        <p> <?= $messages['messages'];?> </p>
-      </div> 
+        
+                <div class="msg-in mt-3"> 
+                    <p><?= $messages['messages'];?></p>
+                </div> 
+                <?php 
+                        }elseif($messages['id_destinataire'] == $getid){
+                ?>  
+                <div class="msg-out mt-3">
+                <strong>MOI</strong> : <p> <?= $messages['messages'];?> </p>
+            </div> 
+        
         <?php 
 
                 }   
