@@ -17,7 +17,7 @@ require_once "../../admin/databaseNomaTech.php";
     
 
     $getid= $_GET['id'];//récupère l'identifiant de l'utilisateur destinataire à partir de la méthode GET.
-    var_dump($getid);
+    //var_dump($getid);
     // vérifie si l'identifiant de l'utilisateur destinataire a été défini et s'il n'est pas vide.
     if(isset($getid)AND !empty($getid)){
        $recupUser = $bdd->prepare('SELECT * FROM freelance WHERE id_freelance = ?');
@@ -37,15 +37,20 @@ require_once "../../admin/databaseNomaTech.php";
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
-    crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/style.css">
-    <title>Messages</title>
+<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../style/style.css" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500;700&family=Open+Sans:wght@300;500&family=Oswald:wght@200&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+	<title>Nomatech : Mes Message</title>
 </head>
 <body>
 
@@ -122,6 +127,8 @@ require_once "../../admin/databaseNomaTech.php";
 	</nav>
 
 <!-- creation d'un formulaire pour les messages . -->
+<h1 class="text-logo mb-5 mt-3" style="font-family: Oswald, serif;"> Votre discussion </h1>
+
 <form method="POST" action=" " align="center" >
 
     <div class="container-msg">
@@ -155,7 +162,7 @@ require_once "../../admin/databaseNomaTech.php";
                 <?php 
                         }elseif($messages['id_destinataire'] == $getid){
                 ?>  
-                <div class="msg-out mt-3">
+                <div class="msg-out mt-3 mb-5">
                 <strong>MOI</strong> : <p> <?= $messages['messages'];?> </p>
             </div> 
         
