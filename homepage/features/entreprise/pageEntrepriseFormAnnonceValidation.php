@@ -54,7 +54,7 @@ $statement = $bdd->query("INSERT INTO projet(projet.project, projet.description,
 
 			<a href="../freelance/consultationTalent.php">Talents</a>
 
-			<a href="../connextion.php">Se connecter</a>
+			<a href="../connexion.php">Se connecter</a>
 
 			<button class="inscription" onclick="window.location.href = '../inscriptionInit.php';">
 				S'inscrire
@@ -149,7 +149,7 @@ $statement = $bdd->query("INSERT INTO projet(projet.project, projet.description,
           </tbody>
         </table>'; ?> </p>
 		<!-- <p> <img class="w-25" src="https://images.unsplash.com/photo-1571942948809-74637bfc59b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGJha2VyaWV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"> </p> -->
-		<a href="../entreprise/pageEntrepriseFormAnnonce.php" class="btn btn-primary" style="font-family: 'Oswald', serif;"> Revenir à la page précédente </a>
+		<a href="../entreprise/pageEntrepriseFormAnnonce.php" class="btn btn-primary mb-5 mt-3" style="font-family: 'Oswald', serif;"> Revenir à la page précédente </a>
 	</div>
 
 	<!------------------ FOOTER ------------------>

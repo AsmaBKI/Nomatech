@@ -38,7 +38,7 @@ require_once "../../../admin/databaseNomaTech.php";
 
 			<a href="../freelance/consultationTalent.php">Talents</a>
 
-			<a href="../connextion.php">Se connecter</a>
+			<a href="../connexion.php">Se connecter</a>
 
 			<button class="inscription" onclick="window.location.href = '../inscriptionInit.php';">
 				S'inscrire
@@ -126,7 +126,7 @@ require_once "../../../admin/databaseNomaTech.php";
 					while ($item = $statement->fetch()) {
 						echo '<div class="col-sm-6 col-md-10 mt-4">';
 						echo '<div class="img-thumbnail border-primary">';
-
+						// echo '<img class="img-photo" src="'.$item['image'].'" alt="Pas de photo disponible">';
 						//echo '<img class="img-photo" src="'.$item['image'].'" alt="Pas de photo disponible">';
 						echo '<h4> ' . $item['project'] . '</h4>';
 						echo '<p> Description : <br>' . $item['description'] . '</p>';
@@ -134,7 +134,7 @@ require_once "../../../admin/databaseNomaTech.php";
 						echo '<p> Date limite pour les candidatures : ' . $item['date'] . '</p>';
 						echo '<p> Réponse sous ' . $item['reponse'] . ' jours</p>';
 						echo '<p> Date de début du projet : ' . $item['dateinit'] . '</p>';
-						echo '<a href="./consultationProjet.php?id=' . $item['id_projet'] . '" class="btn btn-primary">Voir le projet</a>';
+						echo '<a href="../connexion.php' . $item['id_projet'] . '" class="btn btn-primary">Voir le projet</a>';
 						echo '</div>';
 						echo '</div>';
 					}
@@ -143,8 +143,7 @@ require_once "../../../admin/databaseNomaTech.php";
 					while ($item = $statement->fetch()) {
 						echo '<div class="col-sm-6 col-md-10 mt-4">';
 						echo '<div class="img-thumbnail border-primary">';
-
-						//echo '<img class="img-photo" src="'.$item['image'].'" alt="Pas de photo disponible">';
+						// echo '<img class="img-photo" src="'.$item['image'].'" alt="Pas de photo disponible">';
 						echo '<h4> ' . $item['project'] . '</h4>';
 						echo '<p> Description : <br>' . $item['description'] . '</p>';
 						echo '<p> Budget journalier : ' . $item['budget'] . '</p>';
@@ -152,7 +151,7 @@ require_once "../../../admin/databaseNomaTech.php";
 						echo '<p> Réponse sous ' . $item['reponse'] . ' après la date limite des candidatures </p>';
 						echo '<p> Date de début du projet : ' . $item['dateinit'] . '</p>';
 
-						echo '<a href ="#" class="btn btn-default btn-primary" style="font-family: Oswald, serif;" role="button">Contacter</span> </a>';
+						echo '<a href ="../connexion.php" class="btn btn-default btn-primary" style="font-family: Oswald, serif;" role="button">Contacter</span> </a>';
 
 						echo '</div>';
 						echo '</div>';

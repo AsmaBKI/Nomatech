@@ -145,8 +145,8 @@ require_once "../../../admin/databaseNomaTech.php"; // connection à la base de 
 									<textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3" required></textarea>
 								</div>
 
-								<label>Ajouter une photo de profil : </label>
-								<input type="file" name="image">
+								<!-- <label>Ajouter une photo de profil : </label>
+								<input type="file" name="image"> -->
 
 								<div class="form-button mt-5 ml-3">
 									<button id="submit" type="submit" class="btn btn-primary" style="font-family: 'Oswald', serif;">Publier mon profil</button>

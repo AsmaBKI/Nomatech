@@ -39,7 +39,7 @@ require_once "../../../admin/databaseNomaTech.php"; // connection à la base de 
 
 			<a href="../freelance/consultationTalent.php">Talents</a>
 
-			<a href="../connextion.php">Se connecter</a>
+			<a href="../connexion.php">Se connecter</a>
 
 			<button class="inscription" onclick="window.location.href = '../inscriptionInit.php';">
 				S'inscrire
@@ -112,7 +112,7 @@ require_once "../../../admin/databaseNomaTech.php"; // connection à la base de 
 			</form>
 		</div>
 
-		<!-- ********************** AFFICHAGE DE TOUS LES PROJETS ************************* -->
+		<!-- ********************** AFFICHAGE DE TOUS LES freelances ************************* -->
 
 		<div class="text-center mb-5">
 			<img src="../../style/img/background.jpg" class="card-img-top w-25 rounded" alt="Dessin de trajet" />
@@ -123,16 +123,18 @@ require_once "../../../admin/databaseNomaTech.php"; // connection à la base de 
 		if (isset($_GET['terme'])) {
 			$term = $_GET['terme'];
 
-			$statement = $bdd->query('SELECT freelance.id_freelance, freelance.freelance_name, freelance.freelance_job, freelance.freelance_country, freelance.freelance_tjm, freelance.freelance_experience, freelance.freelance_description FROM freelance WHERE freelance.freelance_job LIKE "%' . $term . '%"');
+			$statement = $bdd->query('SELECT freelance.img_url, freelance.id_freelance, freelance.freelance_name, freelance.freelance_job, freelance.freelance_country, freelance.freelance_tjm, freelance.freelance_experience, freelance.freelance_description FROM freelance WHERE freelance.freelance_job LIKE "%' . $term . '%"');
 
 			echo '<div class="tab-content">';
 			echo '<div class="tab-pane active". id="1"></div>';
 			echo '<div class="row">';
 
 			while ($item = $statement->fetch()) {
+				
 				echo '<div class="col-sm-6 col-md-4 mb-2">';
 				echo '<div class="img-thumbnail">';
-				//echo '<img class="img-photo" src="'.$item['image'].'" alt="Pas de photo disponible">';
+				echo '<img class="img-photo" src="'.$item['img_url'].'" alt="Pas de photo disponible">';
+				// echo '<img class="img-photo" src=" " alt="Pas de photo disponible">;
 				echo '<h4>' . $item['freelance_job'] . '</h4>';
 				echo '<p>' . $item['freelance_name'] . '</p>';
 				//echo '<p>'. $item['freelance_description'] .'</p>';
@@ -140,7 +142,7 @@ require_once "../../../admin/databaseNomaTech.php"; // connection à la base de 
 				echo '<div class="price"> TJM : ' . $item['freelance_tjm'] . '€' . '</div>';
 				echo '<div class="caption1">';
 
-				echo '<a href ="" class="btn btn-default btn-primary mt-3" style="font-family: Oswald, serif;" role="button">Contacter ' . $item['freelance_name'] . '</span> </a>';
+				echo '<a href ="../connexion.php" class="btn btn-default btn-primary mt-3" style="font-family: Oswald, serif;" role="button">Contacter ' . $item['freelance_name'] . '</span> </a>';
 				echo '</div>';
 				echo '</div>';
 				echo '</div>';
@@ -149,16 +151,16 @@ require_once "../../../admin/databaseNomaTech.php"; // connection à la base de 
 			echo '</div>';
 			echo '</div> ';
 		} else {
-			$statement = $bdd->query('SELECT freelance.id_freelance, freelance.freelance_name, freelance.freelance_job, freelance.freelance_country, freelance.freelance_tjm, freelance.freelance_experience, freelance.freelance_description FROM freelance');
+			$statement = $bdd->query('SELECT freelance.img_url, freelance.id_freelance, freelance.freelance_name, freelance.freelance_job, freelance.freelance_country, freelance.freelance_tjm, freelance.freelance_experience, freelance.freelance_description FROM freelance');
 
 			echo '<div class="tab-content">';
 			echo '<div class="tab-pane active". id="1"></div>';
 			echo '<div class="row">';
 
 			while ($item = $statement->fetch()) {
-				echo '<div class="col-sm-6 col-md-4 mb-2">';
-				echo '<div class="img-thumbnail">';
-				//echo '<img class="img-photo" src="'.$item['image'].'" alt="Pas de photo disponible">';
+				echo '<div class="col-lg-3 col-sm-6 col-md-4 mb-2">';
+				echo '<div class="card img-thumbnail text-center">';
+				echo '<img class="img-photo w-75 rounded" src="'.$item['img_url'].'" alt="Pas de photo disponible">';
 				echo '<h4>' . $item['freelance_job'] . '</h4>';
 				echo '<p>' . $item['freelance_name'] . '</p>';
 				//echo '<p>'. $item['freelance_description'] .'</p>';
@@ -166,7 +168,7 @@ require_once "../../../admin/databaseNomaTech.php"; // connection à la base de 
 				echo '<div class="price"> TJM : ' . $item['freelance_tjm'] . '€' . '</div>';
 				echo '<div class="caption1">';
 
-				echo '<a href ="" class="btn btn-default btn-primary mt-3" style="font-family: Oswald, serif;" role="button">Contacter ' . $item['freelance_name'] . '</span> </a>';
+				echo '<a href ="../connexion.php" class="btn btn-default btn-primary mt-3" style="font-family: Oswald, serif;" role="button">Contacter ' . $item['freelance_name'] . '</span> </a>';
 				echo '</div>';
 				echo '</div>';
 				echo '</div>';

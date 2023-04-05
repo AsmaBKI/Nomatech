@@ -167,8 +167,8 @@ $statement = $bdd->query("INSERT INTO freelance(freelance.freelance_name, freela
               </tbody>
             </table>'; ?> </p>
 		<!-- <p> <img class="w-25" src="https://images.unsplash.com/photo-1571942948809-74637bfc59b9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGJha2VyaWV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60"> </p> -->
-		<a href="../freelance/pageFreelanceFormProfil.php" class="btn btn-light mt-5"> Revenir à la page précédente </a>
-		<a href="index.php" class="btn btn-light mt-5"> Liste des job </a>
+		<a href="../freelance/pageFreelanceFormProfil.php" class="btn btn-primary mt-5 mb-5"> Revenir à la page précédente </a>
+		<a href="./consultationTalent.php" class="btn btn-primary mt-5 mb-5"> Liste des job </a>
 	</div>
 	<!------------------ FOOTER ------------------>
 	<div class="footer-dark mt-5">
