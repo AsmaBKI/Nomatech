@@ -1,7 +1,15 @@
-<?php //page pour que le freelance crée son profil
+<?php
+//se connecter à la session du user
 session_start();
+
+//se connecter a la base de données
 require_once "../../../admin/databaseNomaTech.php"; // connection à la base de donnée
 // au lieu d'écrire la phrase  : $db = new PDO("mysql:host=localhost;dbname=nomatech","root","root");
+
+//verifier que le user est bien connecté a sa session
+if (!$_SESSION['email'] and !$_SESSION['mdp']) {
+	header('location: ./connexion.php');
+}
 ?>
 
 <!DOCTYPE html>
@@ -124,7 +132,6 @@ require_once "../../../admin/databaseNomaTech.php"; // connection à la base de 
 			$term = $_GET['terme'];
 
 			$statement = $bdd->query('SELECT freelance.img_url, freelance.id_freelance, freelance.freelance_name, freelance.freelance_job, freelance.freelance_country, freelance.freelance_tjm, freelance.freelance_experience, freelance.freelance_description FROM freelance WHERE freelance.freelance_job LIKE "%' . $term . '%"');
-
 			echo '<div class="tab-content">';
 			echo '<div class="tab-pane active". id="1"></div>';
 			echo '<div class="row">';
@@ -158,11 +165,14 @@ require_once "../../../admin/databaseNomaTech.php"; // connection à la base de 
 			echo '<div class="row">';
 
 			while ($item = $statement->fetch()) {
+
+				
 				echo '<div class="col-lg-3 col-sm-6 col-md-4 mb-2">';
 				echo '<div class="card img-thumbnail text-center">';
 				echo '<img class="img-photo w-75 rounded" src="'.$item['img_url'].'" alt="Pas de photo disponible">';
-				echo '<h4>' . $item['freelance_job'] . '</h4>';
-				echo '<p>' . $item['freelance_name'] . '</p>';
+				echo '<h4>' . $item['freelance_job'] . '</h4>';?>
+				<a style="text-decoration:none" href="../message.php?id=<?php echo $item['id_freelance']; ?>">
+				<?php	echo '<p>' . $item['freelance_name'] . '</p>';
 				//echo '<p>'. $item['freelance_description'] .'</p>';
 				echo '<p> Expérience : ' . $item['freelance_experience'] . '</p>';
 				echo '<div class="price"> TJM : ' . $item['freelance_tjm'] . '€' . '</div>';

@@ -17,7 +17,7 @@ if (isset($_POST['envoi'])) {
 			$_SESSION['email'] = $email;
 			$_SESSION['mdp'] = $mdp;
 			$_SESSION['id_user'] = $recupUser->fetch()['id_user'];
-			header('location: ./indexmessagerie.php');
+			header('location: ./freelance/consultationTalent.php');
 		} else {
 			header('location: ./nonconnexion.php');
 		}

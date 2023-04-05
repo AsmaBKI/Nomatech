@@ -3,42 +3,34 @@
 session_start();
 //connexion base de donnees
 require_once "../../admin/databaseNomaTech.php";
-//securité (si l'utililisateur n'est pas connecté ou n'a pas de compte)
-if(!$_SESSION['email'] AND !$_SESSION['mdp']){ 
 
-    //vérifie si l'utilisateur est connecté. 
-    //Si l'utilisateur n'est pas connecté, il est redirigé vers la page de connexion "connexion.php".
-    header('location: ./connexion.php');}
    
     //recuperation user auteur
-    $email=htmlspecialchars($_POST['email']);
-    $mdp=sha1($_POST['mdp']);
-    $recupUse = $bdd->prepare('SELECT * FROM user WHERE email = ? AND mdp = ?');//requête SQL pour sélectionner toutes les colonnes de la table "user" où l'adresse e-mail et le mot de passe correspondent à ceux de l'utilisateur.
-    $recupUse->execute(array($email, $mdp));
+    $id=($_POST['id_freelance']);
+    $recupUse = $bdd->prepare('SELECT * FROM freelance WHERE id_freelance = ?');//requête SQL pour sélectionner toutes les colonnes de la table "user" où l'adresse e-mail et le mot de passe correspondent à ceux de l'utilisateur.
+    $recupUse->execute(array($id));
     if($recupUse->rowCount()> 0){
-        $_SESSION['email'] = $email;
-        $_SESSION['mdp'] = $mdp;
-        $_SESSION['id_user'] = $recupUse->fetch()['id_user'];
+   
+        $_SESSION['id_freelance'] = $recupUse->fetch()['id_freelance'];
     }
 
-    var_dump($_SESSION['id_user'] );
     
 
     $getid= $_GET['id'];//récupère l'identifiant de l'utilisateur destinataire à partir de la méthode GET.
     var_dump($getid);
     // vérifie si l'identifiant de l'utilisateur destinataire a été défini et s'il n'est pas vide.
     if(isset($getid)AND !empty($getid)){
-       $recupUser = $bdd->prepare('SELECT * FROM user WHERE id_user = ?');
+       $recupUser = $bdd->prepare('SELECT * FROM freelance WHERE id_freelance = ?');
        $recupUser->execute(array($getid));
         if($recupUser->rowCount()> 0){
           if(isset($_POST['envoi'])){
                 $message = htmlspecialchars($_POST['messages']);
                 $insererMessage = $bdd->prepare('INSERT INTO messages(messages, id_destinataire, id_auteur)VALUES(?, ?, ?)');
-                $insererMessage->execute(array($message, $getid ,$_SESSION['id_user']));
+                $insererMessage->execute(array($message, $getid ,$_SESSION['id_freelance']));
     
-            } else{echo "aucun utilisateur trouvé";}
-
-        }else{echo "aucun udentifiant trouvé";}
+            }
+		}
+        
     }
 
 ?>
@@ -151,7 +143,7 @@ if(!$_SESSION['email'] AND !$_SESSION['mdp']){
     <section id="messagesenvoyes"> 
         <?php
             $recupMessages = $bdd->prepare('SELECT * FROM messages WHERE id_destinataire = ? AND id_auteur = ? OR id_destinataire = ? AND id_auteur = ? ');
-            $recupMessages->execute(array($getid,$_SESSION['id_user'],$_SESSION['id_user'],$getid ));
+            $recupMessages->execute(array($getid,$_SESSION['id_freelance'],$_SESSION['id_freelance'],$getid ));
 
             while($messages = $recupMessages->fetch()){
                 if($messages['id_destinataire'] == $_SESSION['id_user']){
